@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userDaoImpl" class="top.calvinhaynes.dao.UserDaoImpl"/>
+    <bean id="mysqlImpl" class="top.calvinhaynes.dao.UserDaoMySQLImpl"/>
+    <bean id="oracleImpl" class="top.calvinhaynes.dao.UserDaoOracleImpl"/>
+
+    <!--bean就是java对象,由Spring创建和管理-->
+    <!--
+        id 是bean的标识符,要唯一,如果没有配置id,name就是默认标识符
+        如果配置id,又配置了name,那么name是别名
+        name可以设置多个别名,可以用逗号,分号,空格隔开
+        如果不配置id和name,可以根据applicationContext.getBean(.class)获取对象;
+
+        class是bean的全限定名=包名+类名
+    -->
+    <bean id="userService" name="test,test1,test2" class="top.calvinhaynes.service.UserServiceImpl">
+        <constructor-arg name="userDao" ref="oracleImpl"/>
+    </bean>
+
+    <!--设置别名：在获取Bean的时候可以使用别名获取-->
+    <!--可以设置多个别名 -->
+    <alias name="userService" alias="service"/>
+    <alias name="userService" alias="myService"/>
+
+
+
+</beans>

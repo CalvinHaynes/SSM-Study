@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--注册bean-->
+    <bean id="userService" class="top.calvinhaynes.service.UserServiceImpl"/>
+    <bean id="beforeLog" class="top.calvinhaynes.log.BeforeLog"/>
+    <bean id="afterLog" class="top.calvinhaynes.log.AfterLog"/>
+
+    <!--方式一：使用原生Spring API 接口-->
+    <!--配置AOP 需要导入AOP的约束-->
+<!--    <aop:config>-->
+<!--        &lt;!&ndash;切入点： expression：表达式,固定写法：execution(要执行的位置 * * * * * )&ndash;&gt;-->
+<!--        <aop:pointcut id="pointcut" expression="execution(* top.calvinhaynes.service.UserServiceImpl.*(..))"/>-->
+
+<!--        &lt;!&ndash;执行环绕增加 &ndash;&gt;-->
+<!--        <aop:advisor advice-ref="beforeLog" pointcut-ref="pointcut"/>-->
+<!--        <aop:advisor advice-ref="afterLog" pointcut-ref="pointcut"/>-->
+
+<!--    </aop:config>-->
+
+    <!--方式二：自定义类来实现AOP-->
+<!--    <bean id="diy" class="top.calvinhaynes.diy.DiyPointCut"/>-->
+
+<!--    <aop:config>-->
+<!--        &lt;!&ndash;自定义切面，ref是引用的类&ndash;&gt;-->
+<!--        <aop:aspect ref="diy">-->
+<!--            &lt;!&ndash;切入点&ndash;&gt;-->
+<!--            <aop:pointcut id="point" expression="execution(* top.calvinhaynes.service.UserServiceImpl.*(..))"/>-->
+
+<!--            &lt;!&ndash;通知(要切入的方法)&ndash;&gt;-->
+<!--            <aop:before method="beforeLog" pointcut-ref="point"/>-->
+<!--            <aop:after method="afterLog" pointcut-ref="point"/>-->
+
+<!--        </aop:aspect>-->
+
+<!--    </aop:config>-->
+
+    <!--方式三：注解实现-->
+    <bean id="annotationPointCut" class="top.calvinhaynes.annotation.AnnotationPointCut"/>
+    <!--开启注解支持-->
+    <!--
+        proxy-target-class参数：指定使用 JDK 默认 API 实现动态代理还是 Spring 自带的 cglib 实现动态代理（结果没区别）
+            - true : 使用cglib
+            - false : 缺省默认值，使用JDK默认API
+    -->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+
+</beans>
