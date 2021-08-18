@@ -6,7 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="MyBatis-JDBC" />
+        <module name="MyBatis-5-LogFactory" />
+        <module name="MyBatis-3-ConfigurationOptimization" />
+        <module name="MyBatis-1-JDBC" />
+        <module name="MyBatis-4-ResultMap" />
+        <module name="MyBatis-2-FirstDemo" />
       </profile>
     </annotationProcessing>
   </component>

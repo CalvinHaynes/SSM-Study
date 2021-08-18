@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="db.properties">
+        <property name="username" value="root"/>
+        <property name="pwd" value="412523chx"/>
+    </properties>
+
+    <typeAliases>
+<!--        <typeAlias type="top.calvinhaynes.pojo.Users" alias="user"/>-->
+        <package name="top.calvinhaynes.pojo"/>
+    </typeAliases>
+
+    <environments default="test">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${pwd}"/>
+            </dataSource>
+        </environment>
+
+        <environment id="test">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${pwd}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+<!--        <mapper resource="top/calvinhaynes/mapper/mybatis-mapper.xml"/>-->
+<!--        <mapper class="top.calvinhaynes.mapper.UserMapper"/>-->
+        <package name="top.calvinhaynes.mapper"/>
+    </mappers>
+
+
+</configuration>

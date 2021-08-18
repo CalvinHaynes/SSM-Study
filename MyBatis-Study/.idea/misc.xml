@@ -5,8 +5,14 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis-1-JDBC/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis-5-LogFactory/pom.xml" />
       </list>
     </option>
+  </component>
+  <component name="ProjectResources">
+    <resource url="http://mybatis.org/dtd/mybatis-3-config.dtd" location="$PROJECT_DIR$/MyBatis-2-FirstDemo/src/main/resources/dtd/mybatis-3-config.dtd" />
+    <resource url="http://mybatis.org/dtd/mybatis-3-mapper.dtd" location="$PROJECT_DIR$/MyBatis-2-FirstDemo/src/main/resources/dtd/mybatis-3-mapper.dtd" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="adopt-openjdk-11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
