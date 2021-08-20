@@ -8,12 +8,13 @@ import java.sql.Statement;
 import top.calvinhaynes.utils.JdbcUtils;
 
 /**
- * @ProjectName: JdbcTest2
- * @Author: CalvinHaynes
- * @Date: 2021/8/16 20:54
- * @Description:利用JdbcUtils工具类进行测试增删改查中的增
+ * jdbc测试 创建
+ *
+ * @author CalvinHaynes
+ * @date 2021/08/20
  */
 public class JdbcTestCreate {
+
     public static void main(String[] args) throws SQLException {
         Connection connection = null;
         Statement  statement  = null;
@@ -40,4 +41,3 @@ public class JdbcTestCreate {
 }
 
 
-//~ Formatted by Jindent --- http://www.jindent.com

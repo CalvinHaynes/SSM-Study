@@ -7,6 +7,6 @@
     <file url="file://$PROJECT_DIR$/MyBatis-1-JDBC/src/test/java/top/calvinhaynes/CRUD/JdbcTestRead.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/MyBatis-1-JDBC/src/test/java/top/calvinhaynes/CRUD/JdbcTestUpdate.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/MyBatis-1-JDBC/src/test/java/top/calvinhaynes/JdbcFirstTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/MyBatis-1-JDBC/src/test/java/top/calvinhaynes/SQLInjection/Test1.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/MyBatis-1-JDBC/src/test/java/top/calvinhaynes/SQLInjection/TestSQLInjection.java" charset="GBK" />
   </component>
 </project>

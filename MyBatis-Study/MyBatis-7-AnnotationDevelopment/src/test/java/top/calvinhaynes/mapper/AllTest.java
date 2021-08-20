@@ -7,25 +7,36 @@ import top.calvinhaynes.utils.MyBatisUtils;
 
 import java.util.List;
 
-public class Test1 {
-    @Test
-    public void selectUserTest(){
+/**
+ * 所有测试
+ *
+ * @author CalvinHaynes
+ * @date 2021 /08/19
+ */
+public class AllTest {
 
-        //先利用工具类拿到SqlSession
+    /**
+     * 查询所有用户测试
+     */
+    @Test
+    public void selectUserTest() {
+
         SqlSession session = MyBatisUtils.getSession();
 
         UserMapper mapper = session.getMapper(UserMapper.class);
 
-        List<Users> users = mapper.selectUser();
+        List<Users> users = mapper.getAllUsers();
 
         for (Users user : users) {
             System.out.println(user);
         }
 
-        //关闭SqlSession
         session.close();
     }
 
+    /**
+     * 通过用户id查询用户信息测试
+     */
     @Test
     public void selectUserByIdTest() {
         SqlSession session = MyBatisUtils.getSession();
@@ -38,52 +49,59 @@ public class Test1 {
         session.close();
     }
 
+    /**
+     * Add user test.
+     */
     @Test
-    public void updateUserByNameTest(){
+    public void addUserTest() {
         SqlSession session = MyBatisUtils.getSession();
 
         UserMapper mapper = session.getMapper(UserMapper.class);
 
-        Users calvin = new Users(1003,"Calvin","987654");
-        int res = mapper.updateUserByName(calvin);
+        int user = mapper.addUser(new Users(1006, "James", "89098766"));
 
-        if(res > 0){
-            System.out.println("更改用户" + calvin.getName() + "的信息成功");
+        if (user > 0) {
+            System.out.println("添加成功");
         }
 
-        //增删改一定要提交事务
-        session.commit();
         session.close();
     }
 
-    @Test
-    public void addUserTest(){
-        SqlSession session = MyBatisUtils.getSession();
-
-        Users liHua = new Users(1004, "LiHua", "5418814");
-        UserMapper mapper = session.getMapper(UserMapper.class);
-        int res = mapper.addUser(liHua);
-
-        if(res > 0){
-            System.out.println("添加用户" + liHua + "成功");
-        }
-
-        session.commit();
-        session.close();
-    }
-
+    /**
+     * Delete user by id test.
+     */
     @Test
     public void deleteUserByIdTest() {
         SqlSession session = MyBatisUtils.getSession();
 
         UserMapper mapper = session.getMapper(UserMapper.class);
-        int i = mapper.deleteUserById(1004);
 
-        if(i > 0){
-            System.out.println("删除用户成功");
+        int user = mapper.deleteUserById(1006);
+
+        if (user > 0) {
+            System.out.println("删除成功");
         }
 
-        session.commit();
         session.close();
     }
+
+    /**
+     * Update user by name test.
+     */
+    @Test
+    public void updateUserByNameTest() {
+        SqlSession session = MyBatisUtils.getSession();
+
+        UserMapper mapper = session.getMapper(UserMapper.class);
+
+        int user = mapper.updateUserByName(new Users(1007, "LiHua", "8905467577"));
+
+        if (user > 0) {
+            System.out.println("更新成功");
+        }
+
+        session.close();
+    }
+
+
 }

@@ -7,13 +7,22 @@ import java.sql.Statement;
 
 import top.calvinhaynes.utils.JdbcUtils;
 
+
 /**
- * @ProjectName: Test1
- * @Author: CalvinHaynes
- * @Date: 2021/8/16 23:02
- * @Description:SQL注入测试类
+ * SQL注入测试类
+ *
+ * @author CalvinHaynes
+ * @date 2021/08/20
  */
-public class Test1 {
+public class TestSQLInjection {
+
+    /**
+     * 登录模拟方法
+     *
+     * @param name     名字
+     * @param password 密码
+     * @throws SQLException sqlexception异常
+     */
     public static void logIn(String name, String password) throws SQLException {
         Connection connection = null;
         Statement  statement  = null;
@@ -53,5 +62,3 @@ public class Test1 {
     }
 }
 
-
-//~ Formatted by Jindent --- http://www.jindent.com

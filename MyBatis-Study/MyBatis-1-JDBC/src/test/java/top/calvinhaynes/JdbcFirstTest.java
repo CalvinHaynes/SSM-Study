@@ -4,6 +4,12 @@ import java.sql.*;
 
 import com.mysql.cj.jdbc.Driver;
 
+/**
+ * jdbc的第一个测试
+ *
+ * @author CalvinHaynes
+ * @date 2021/08/20
+ */
 public class JdbcFirstTest {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
@@ -13,7 +19,7 @@ public class JdbcFirstTest {
 
         // 2.用户信息和 URL
         // URL = "协议：//主机地址：端口号/数据库名?参数1&参数2&参数3"
-        String url      = "jdbc:mysql://localhost:3306/exam1?useUnicode=true&characterEncoding=utf8&useSSL=true";
+        String url = "jdbc:mysql://localhost:3306/exam1?useUnicode=true&characterEncoding=utf8&useSSL=true";
         String userName = "root";
         String password = "412523chx";
 
@@ -51,5 +57,3 @@ public class JdbcFirstTest {
     }
 }
 
-
-//~ Formatted by Jindent --- http://www.jindent.com

@@ -10,7 +10,7 @@
 [DEBUG][21-08-18][top.calvinhaynes.mapper.UserMapper.selectUserById]==>  Preparing: select * from users where id=?;
 [DEBUG][21-08-18][top.calvinhaynes.mapper.UserMapper.selectUserById]==> Parameters: 1002(Integer)
 [DEBUG][21-08-18][top.calvinhaynes.mapper.UserMapper.selectUserById]<==      Total: 1
-[INFO][21-08-18][top.calvinhaynes.mapper.Test1]测试Info
+[INFO][21-08-18][top.calvinhaynes.mapper.TestPageBreak]测试Info
 [DEBUG][21-08-18][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@58c34bb3]
 [DEBUG][21-08-18][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@58c34bb3]
 [DEBUG][21-08-18][org.apache.ibatis.datasource.pooled.PooledDataSource]Returned connection 1489193907 to pool.

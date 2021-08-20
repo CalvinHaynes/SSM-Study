@@ -4,26 +4,28 @@ import top.calvinhaynes.pojo.Users;
 
 import java.util.List;
 
+
 /**
- * @ProjectName: UserMapper
- * @Author: CalvinHaynes
- * @Date: 2021/8/18 12:56
- * @Description:UserMapper接口(CRUD）
+ * 用户映射器
+ *
+ * @author CalvinHaynes
+ * @date 2021/08/19
  */
 public interface UserMapper {
-    //查询所有User
-    List<Users> selectUser();
+    /**
+     * 查询所有User
+     *
+     * @return {@link List}<{@link Users}>
+     */
+    List<Users> getAllUsers();
 
-    //按ID查询User
-    Users selectUserById(int i);
+    /**
+     * 按ID查询User
+     *
+     * @param id id
+     * @return {@link Users}
+     */
+    Users selectUserById(int id);
 
-    //通过用户名修改用户
-    int updateUserByName(Users user);
-
-    //增加用户
-    int addUser(Users user);
-
-    //通过id删除一个用户
-    int deleteUserById(int id);
 
 }

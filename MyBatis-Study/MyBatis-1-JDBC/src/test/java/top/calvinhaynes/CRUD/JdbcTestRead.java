@@ -7,11 +7,12 @@ import java.sql.Statement;
 
 import top.calvinhaynes.utils.JdbcUtils;
 
+
 /**
- * @ProjectName: JdbcTestQuery
- * @Author: CalvinHaynes
- * @Date: 2021/8/16 21:02
- * @Description:利用JdbcUtils工具类进行测试增删改查中的查
+ * jdbc测试 查询
+ *
+ * @author CalvinHaynes
+ * @date 2021/08/20
  */
 public class JdbcTestRead {
     public static void main(String[] args) throws SQLException {

@@ -6,11 +6,12 @@ import java.sql.Statement;
 
 import top.calvinhaynes.utils.JdbcUtils;
 
+
 /**
- * @ProjectName: JdbcTestUpdate
- * @Author: CalvinHaynes
- * @Date: 2021/8/16 21:14
- * @Description:利用JdbcUtils工具类进行测试增删改查中的改
+ * jdbc测试 修改
+ *
+ * @author CalvinHaynes
+ * @date 2021/08/20
  */
 public class JdbcTestUpdate {
     public static void main(String[] args) throws SQLException {

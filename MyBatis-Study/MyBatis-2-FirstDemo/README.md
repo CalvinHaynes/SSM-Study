@@ -170,7 +170,7 @@ mappers标签下的mapper配置文件一定要在之后写完mapper的XML配置�
 ==加入以下配置到pom.xml中即可解决==：
 
 ```xml
-<!--解决Maven静态资源过滤问题-->
+<!--在项目根的pom.xml中加入此,解决整个项目的Maven静态资源过滤问题 -->
 <build>
     <resources>
         <resource>
