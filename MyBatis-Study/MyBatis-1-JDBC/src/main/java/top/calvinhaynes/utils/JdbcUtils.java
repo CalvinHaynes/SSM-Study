@@ -7,49 +7,58 @@ import java.sql.*;
 
 import java.util.Properties;
 
+
 /**
- * @ProjectName: JdbcUtils
- * @Author: CalvinHaynes
- * @Date: 2021/8/16 20:14
- * @Description:
+ * Jdbc utils.
+ *
+ * @author CalvinHaynes
+ * @date 2021/08/21
  */
 public class JdbcUtils {
-    private static String driver   = null;
-    private static String url      = null;
+    private static String driver = null;
+    private static String url = null;
     private static String username = null;
     private static String password = null;
 
     static {
         try {
 
-            // getResourceAsStream:·µ»ØÓÃÓÚ¶ÁÈ¡Ö¸¶¨×ÊÔ´µÄÊäÈëÁ÷
+            // getResourceAsStream:è¿”å›ç”¨äºè¯»å–æŒ‡å®šèµ„æºçš„è¾“å…¥æµ
             InputStream inputStream = JdbcUtils.class.getClassLoader().getResourceAsStream("db.properties");
 
-            // ´´½¨Ò»¸öÃ»ÓĞÄ¬ÈÏÖµµÄ¿ÕÊôĞÔÁĞ±í.
+            // åˆ›å»ºä¸€ä¸ªæ²¡æœ‰é»˜è®¤å€¼çš„ç©ºå±æ€§åˆ—è¡¨.
             Properties properties = new Properties();
 
-            // ¶ÏÑÔ inputStream ÊÇ·ñÎª¿Õ£¬Èç¹ûÎª¿ÕÅ×Òì³£ AssertionError
+            // æ–­è¨€ inputStream æ˜¯å¦ä¸ºç©ºï¼Œå¦‚æœä¸ºç©ºæŠ›å¼‚å¸¸ AssertionError
             assert inputStream != null;
 
-            // ¼ÓÔØ db.properties ÖĞµÄÊôĞÔÁĞ±í
+            // åŠ è½½ db.properties ä¸­çš„å±æ€§åˆ—è¡¨
             properties.load(inputStream);
 
-            // ÔÚ´ËÊôĞÔÁĞ±íÖĞËÑË÷¾ßÓĞÖ¸¶¨¼üµÄÊôĞÔ¡£
-            // Èç¹ûÔÚ´ËÊôĞÔÁĞ±íÖĞÕÒ²»µ½¸Ã¼ü£¬Ôòµİ¹éµØ¼ì²éÄ¬ÈÏÊôĞÔÁĞ±í¼°ÆäÄ¬ÈÏÖµ¡£
-            // Èç¹ûÎ´ÕÒµ½¸ÃÊôĞÔ£¬¸Ã·½·¨½«·µ»Ønull
-            driver   = properties.getProperty("driver");
-            url      = properties.getProperty("url");
+            // åœ¨æ­¤å±æ€§åˆ—è¡¨ä¸­æœç´¢å…·æœ‰æŒ‡å®šé”®çš„å±æ€§ã€‚
+            // å¦‚æœåœ¨æ­¤å±æ€§åˆ—è¡¨ä¸­æ‰¾ä¸åˆ°è¯¥é”®ï¼Œåˆ™é€’å½’åœ°æ£€æŸ¥é»˜è®¤å±æ€§åˆ—è¡¨åŠå…¶é»˜è®¤å€¼ã€‚
+            // å¦‚æœæœªæ‰¾åˆ°è¯¥å±æ€§ï¼Œè¯¥æ–¹æ³•å°†è¿”å›null
+            driver = properties.getProperty("driver");
+            url = properties.getProperty("url");
             username = properties.getProperty("username");
             password = properties.getProperty("password");
 
-            // Çı¶¯Ö»¼ÓÔØÒ»´Î
+            // é©±åŠ¨åªåŠ è½½ä¸€æ¬¡
             Class.forName(driver);
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
 
-    // ÊÍ·Å×ÊÔ´µÄ¾²Ì¬¹¤¾ß·½·¨
+    /**
+     * Close.
+     * é‡Šæ”¾èµ„æºçš„é™æ€å·¥å…·æ–¹æ³•
+     *
+     * @param connection the connection
+     * @param statement  the statement
+     * @param resultSet  the result set
+     * @throws SQLException the sql exception
+     */
     public static void close(Connection connection, Statement statement, ResultSet resultSet) throws SQLException {
         if (resultSet != null) {
             resultSet.close();
@@ -64,11 +73,15 @@ public class JdbcUtils {
         }
     }
 
-    // »ñÈ¡Á¬½ÓµÄ¾²Ì¬¹¤¾ß·½·¨
+    /**
+     * Gets connection.
+     * è·å–è¿æ¥çš„é™æ€å·¥å…·æ–¹æ³•
+     *
+     * @return the connection
+     * @throws SQLException the sql exception
+     */
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(url, username, password);
     }
 }
 
-
-//~ Formatted by Jindent --- http://www.jindent.com

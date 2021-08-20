@@ -8,7 +8,7 @@ import top.calvinhaynes.utils.JdbcUtils;
 
 
 /**
- * jdbc²âÊÔ É¾³ı
+ * jdbcæµ‹è¯• åˆ é™¤
  *
  * @author CalvinHaynes
  * @date 2021/08/20
@@ -28,7 +28,7 @@ public class JdbcTestDelete {
             int    i   = statement.executeUpdate(sql);
 
             if (i > 0) {
-                System.out.println("É¾³ı³É¹¦£¡");
+                System.out.println("åˆ é™¤æˆåŠŸï¼");
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -39,4 +39,3 @@ public class JdbcTestDelete {
 }
 
 
-//~ Formatted by Jindent --- http://www.jindent.com

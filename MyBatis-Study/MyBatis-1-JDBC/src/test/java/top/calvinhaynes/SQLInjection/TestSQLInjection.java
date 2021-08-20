@@ -9,7 +9,7 @@ import top.calvinhaynes.utils.JdbcUtils;
 
 
 /**
- * SQL×¢Èë²âÊÔÀà
+ * SQLæ³¨å…¥æµ‹è¯•ç±»
  *
  * @author CalvinHaynes
  * @date 2021/08/20
@@ -17,11 +17,11 @@ import top.calvinhaynes.utils.JdbcUtils;
 public class TestSQLInjection {
 
     /**
-     * µÇÂ¼Ä£Äâ·½·¨
+     * ç™»å½•æ¨¡æ‹Ÿæ–¹æ³•
      *
-     * @param name     Ãû×Ö
-     * @param password ÃÜÂë
-     * @throws SQLException sqlexceptionÒì³£
+     * @param name     åå­—
+     * @param password å¯†ç 
+     * @throws SQLException sqlexceptionå¼‚å¸¸
      */
     public static void logIn(String name, String password) throws SQLException {
         Connection connection = null;
@@ -36,7 +36,7 @@ public class TestSQLInjection {
             String    sql       = "SELECT * FROM users WHERE `NAME`='" + name + "' AND `PASSWORD`='" + password + "'";
             ResultSet resultSet = statement.executeQuery(sql);
 
-            System.out.println("Êµ¼ÊÖ´ĞĞÓï¾äÊÇ£º" + sql + "\n");
+            System.out.println("å®é™…æ‰§è¡Œè¯­å¥æ˜¯ï¼š" + sql + "\n");
 
             while (resultSet.next()) {
                 System.out.println("id:" + resultSet.getString("id"));
@@ -53,12 +53,12 @@ public class TestSQLInjection {
 
     public static void main(String[] args) throws SQLException {
 
-        // ¶ñÒâÆ´½Ó²éÑ¯
+        // æ¶æ„æ‹¼æ¥æŸ¥è¯¢
         logIn("' or '1=1", "' or '1=1");
 
-        // ·ÖÎö½á¹û
-        // Êµ¼ÊÖ´ĞĞÓï¾äÊÇ£ºSELECT * FROM users WHERE `NAME`='' or '1=1' AND `PASSWORD`='' or '1=1'
-        // ÕâÑù¶ñÒâÆ´½Ó×Ö·û´®ºó£¬µ¼ÖÂ WHERE ºóÃæµÄÓï¾äºãÕæ£¬×ÔÈ»¾Í»áÊä³öËùÓĞµÄ users ĞÅÏ¢
+        // åˆ†æç»“æœ
+        // å®é™…æ‰§è¡Œè¯­å¥æ˜¯ï¼šSELECT * FROM users WHERE `NAME`='' or '1=1' AND `PASSWORD`='' or '1=1'
+        // è¿™æ ·æ¶æ„æ‹¼æ¥å­—ç¬¦ä¸²åï¼Œå¯¼è‡´ WHERE åé¢çš„è¯­å¥æ’çœŸï¼Œè‡ªç„¶å°±ä¼šè¾“å‡ºæ‰€æœ‰çš„ users ä¿¡æ¯
     }
 }
 

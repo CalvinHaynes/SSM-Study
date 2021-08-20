@@ -8,7 +8,7 @@ import java.sql.Statement;
 import top.calvinhaynes.utils.JdbcUtils;
 
 /**
- * jdbc²âÊÔ ´´½¨
+ * jdbcæµ‹è¯• åˆ›å»º
  *
  * @author CalvinHaynes
  * @date 2021/08/20
@@ -26,11 +26,11 @@ public class JdbcTestCreate {
             statement  = connection.createStatement();
 
             String sql = "INSERT INTO orderitems(order_num, order_item, prod_id, quantity, item_price)\n"
-                         + "VALUES (20009,8,'FB',20,23.99);";
+                    + "VALUES (20009,8,'FB',20,23.99);";
             int i = statement.executeUpdate(sql);
 
             if (i > 0) {
-                System.out.println("²åÈë³É¹¦£¡");
+                System.out.println("æ’å…¥æˆåŠŸï¼");
             }
         } catch (SQLException e) {
             e.printStackTrace();

@@ -8,7 +8,7 @@ import top.calvinhaynes.utils.JdbcUtils;
 
 
 /**
- * jdbc²âÊÔ ĞŞ¸Ä
+ * jdbcæµ‹è¯• ä¿®æ”¹
  *
  * @author CalvinHaynes
  * @date 2021/08/20
@@ -25,11 +25,11 @@ public class JdbcTestUpdate {
             statement  = connection.createStatement();
 
             String sql =
-                "UPDATE exam1.orderitems t SET t.item_price = 5.50 WHERE t.order_num = 20008 AND t.order_item = 1;";
+                    "UPDATE exam1.orderitems t SET t.item_price = 5.50 WHERE t.order_num = 20008 AND t.order_item = 1;";
             int i = statement.executeUpdate(sql);
 
             if (i > 0) {
-                System.out.println("¸ü¸Ä³É¹¦£¡");
+                System.out.println("æ›´æ”¹æˆåŠŸï¼");
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -40,4 +40,3 @@ public class JdbcTestUpdate {
 }
 
 
-//~ Formatted by Jindent --- http://www.jindent.com

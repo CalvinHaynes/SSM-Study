@@ -9,7 +9,7 @@ import top.calvinhaynes.utils.JdbcUtils;
 
 
 /**
- * jdbc²âÊÔ ²éÑ¯
+ * jdbcæµ‹è¯• æŸ¥è¯¢
  *
  * @author CalvinHaynes
  * @date 2021/08/20
@@ -44,4 +44,3 @@ public class JdbcTestRead {
 }
 
 
-//~ Formatted by Jindent --- http://www.jindent.com

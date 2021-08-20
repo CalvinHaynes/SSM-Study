@@ -5,7 +5,7 @@ import java.sql.*;
 import com.mysql.cj.jdbc.Driver;
 
 /**
- * jdbcµÄµÚÒ»¸ö²âÊÔ
+ * jdbcçš„ç¬¬ä¸€ä¸ªæµ‹è¯•
  *
  * @author CalvinHaynes
  * @date 2021/08/20
@@ -13,30 +13,30 @@ import com.mysql.cj.jdbc.Driver;
 public class JdbcFirstTest {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
-        // 1.¼ÓÔØÇı¶¯£¨¹Ì¶¨Ğ´·¨£©
+        // 1.åŠ è½½é©±åŠ¨ï¼ˆå›ºå®šå†™æ³•ï¼‰
         // DriverManager.registerDriver(new Driver());
         Class.forName("com.mysql.cj.jdbc.Driver");
 
-        // 2.ÓÃ»§ĞÅÏ¢ºÍ URL
-        // URL = "Ğ­Òé£º//Ö÷»úµØÖ·£º¶Ë¿ÚºÅ/Êı¾İ¿âÃû?²ÎÊı1&²ÎÊı2&²ÎÊı3"
+        // 2.ç”¨æˆ·ä¿¡æ¯å’Œ URL
+        // URL = "åè®®ï¼š//ä¸»æœºåœ°å€ï¼šç«¯å£å·/æ•°æ®åº“å?å‚æ•°1&å‚æ•°2&å‚æ•°3"
         String url = "jdbc:mysql://localhost:3306/exam1?useUnicode=true&characterEncoding=utf8&useSSL=true";
         String userName = "root";
         String password = "412523chx";
 
-        // 3.Á¬½Ó³É¹¦,·µ»ØÊı¾İ¿â¶ÔÏó connection
+        // 3.è¿æ¥æˆåŠŸ,è¿”å›æ•°æ®åº“å¯¹è±¡ connection
         Connection connection = DriverManager.getConnection(url, userName, password);
 
-        // 4.´´½¨Ö´ĞĞSQLµÄ¶ÔÏó statement
+        // 4.åˆ›å»ºæ‰§è¡ŒSQLçš„å¯¹è±¡ statement
         Statement statement = connection.createStatement();
 
-        // 5.Ö´ĞĞSQLµÄ¶ÔÏóÈ¥Ö´ĞĞSQL,Èç¹ûÓĞ±¾³ÌĞòĞèÒªÓÃµÄÊı¾İ²Ù×÷£¬ÔÙÔÚ±¾´Ë´¦½øĞĞ²Ù×÷
-        // ÒªÖ´ĞĞµÄSQLÓï¾ä
+        // 5.æ‰§è¡ŒSQLçš„å¯¹è±¡å»æ‰§è¡ŒSQL,å¦‚æœæœ‰æœ¬ç¨‹åºéœ€è¦ç”¨çš„æ•°æ®æ“ä½œï¼Œå†åœ¨æœ¬æ­¤å¤„è¿›è¡Œæ“ä½œ
+        // è¦æ‰§è¡Œçš„SQLè¯­å¥
         String sql = "SELECT * FROM customers";
 
-        // Ö´ĞĞSQLÓï¾ä,ÄÃµ½·µ»Ø½á¹û
+        // æ‰§è¡ŒSQLè¯­å¥,æ‹¿åˆ°è¿”å›ç»“æœ
         ResultSet resultSet = statement.executeQuery(sql);
 
-        // ´òÓ¡Ò»ÏÂ·µ»Ø½á¹û¿´¿´Ğ§¹û
+        // æ‰“å°ä¸€ä¸‹è¿”å›ç»“æœçœ‹çœ‹æ•ˆæœ
         while (resultSet.next()) {
             System.out.println("cust_id=" + resultSet.getObject("cust_id"));
             System.out.println("cust_name=" + resultSet.getObject("cust_name"));
@@ -50,7 +50,7 @@ public class JdbcFirstTest {
             System.out.println("==================================================");
         }
 
-        // 6.¹Ø±ÕÊı¾İ¿âÁ¬½Ó
+        // 6.å…³é—­æ•°æ®åº“è¿æ¥
         resultSet.close();
         statement.close();
         connection.close();
