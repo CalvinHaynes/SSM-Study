@@ -2,15 +2,17 @@ package top.calvinhaynes.pojo;
 
 import org.apache.ibatis.type.Alias;
 
+import java.io.Serializable;
+
 /**
- * 用户实体类
+ * 用户
  * The type Users.
  *
  * @author CalvinHaynes
  * @date 2021/08/20
  */
 @Alias("user")
-public class Users {
+public class Users implements Serializable {
     private int id;
     private String name;
     private String pwd;

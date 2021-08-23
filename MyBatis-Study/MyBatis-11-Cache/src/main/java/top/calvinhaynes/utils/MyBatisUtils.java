@@ -10,7 +10,7 @@ import java.io.InputStream;
 
 
 /**
- * MyBatis 自定义工具类
+ * MyBatis 工具类
  *
  * @author CalvinHaynes
  * @date 2021/08/19
@@ -23,7 +23,7 @@ public class MyBatisUtils {
         try {
             //从 XML 中构建 SqlSessionFactory
             String resource = "mybatis-config.xml";
-            InputStream inputStream = Resources.getResourceAsStream(resource);
+            InputStream inputStream= Resources.getResourceAsStream(resource);
             sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         } catch (IOException e) {
             e.printStackTrace();
@@ -35,7 +35,7 @@ public class MyBatisUtils {
      *
      * @return the sql session
      */
-    public static SqlSession getSession() {
+    public static SqlSession getSession(){
         return sqlSessionFactory.openSession();
     }
 

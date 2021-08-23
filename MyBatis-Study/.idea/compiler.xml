@@ -7,8 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="MyBatis-10-DynamicSQL" />
         <module name="MyBatis-3-ConfigurationOptimization" />
         <module name="MyBatis-8-ComplexEnvironment-ManyToOne" />
+        <module name="MyBatis-11-Cache" />
         <module name="MyBatis-4-ResultMap" />
         <module name="MyBatis-6-PageBreak" />
         <module name="MyBatis-2-FirstDemo" />

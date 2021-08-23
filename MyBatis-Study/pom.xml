@@ -18,6 +18,8 @@
         <module>MyBatis-7-AnnotationDevelopment</module>
         <module>MyBatis-8-ComplexEnvironment-ManyToOne</module>
         <module>MyBatis-9-ComplexEnvironment-OneToMany</module>
+        <module>MyBatis-10-DynamicSQL</module>
+        <module>MyBatis-11-Cache</module>
     </modules>
 
     <properties>

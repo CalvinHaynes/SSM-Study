@@ -10,7 +10,7 @@ import java.io.InputStream;
 
 
 /**
- * MyBatis 自定义工具类
+ * MyBatis 工具类
  *
  * @author CalvinHaynes
  * @date 2021/08/19
@@ -36,7 +36,7 @@ public class MyBatisUtils {
      * @return the sql session
      */
     public static SqlSession getSession() {
-        return sqlSessionFactory.openSession();
+        return sqlSessionFactory.openSession(true);
     }
 
 }

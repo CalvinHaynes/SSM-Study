@@ -5,32 +5,75 @@ import top.calvinhaynes.pojo.Users;
 import java.util.List;
 import java.util.Map;
 
+
 /**
- * @ProjectName: UserMapper
- * @Author: CalvinHaynes
- * @Date: 2021/8/18 12:56
- * @Description:UserMapper接口(CRUD）
+ * The interface User mapper.
  */
 public interface UserMapper {
-    //查询所有User
+    /**
+     * Select user list.
+     * 查询所有User
+     *
+     * @return the list
+     */
+
     List<Users> selectUser();
 
-    //按ID查询User
+    /**
+     * Select user by id users.
+     * 按ID查询User
+     *
+     * @param i the
+     * @return the users
+     */
     Users selectUserById(int i);
 
-    //通过用户名修改用户
+    /**
+     * Update user by name int.
+     * 通过用户名修改用户
+     *
+     * @param user the user
+     * @return the int
+     */
     int updateUserByName(Users user);
 
-    //增加用户
+    /**
+     * Add user int.
+     * /增加用户
+     *
+     * @param user the user
+     * @return the int
+     */
     int addUser(Users user);
 
-    //通过id删除一个用户
+    /**
+     * Delete user by id int.
+     * 通过id删除一个用户
+     *
+     * @param id the id
+     * @return the int
+     */
+
     int deleteUserById(int id);
 
-    //利用Map添加一个用户
+    /**
+     * Add user by map int.
+     * 利用Map添加一个用户
+     *
+     * @param map the map
+     * @return the int
+     */
+
     int addUserByMap(Map map);
 
-    //根据姓名关键字模糊查询
+    /**
+     * Select user like list.
+     * 根据姓名关键字模糊查询
+     *
+     * @param value the value
+     * @return the list
+     */
+
     List<Users> selectUserLike(String value);
 
 

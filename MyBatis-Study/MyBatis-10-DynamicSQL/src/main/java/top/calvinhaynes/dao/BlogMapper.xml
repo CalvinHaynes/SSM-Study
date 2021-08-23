@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.calvinhaynes.dao.BlogMapper">
+
+    <!--        <select id="queryBlogIf" parameterType="map" resultType="Blog">-->
+    <!--            select * from blog where 1=1-->
+    <!--            <if test="title != null">-->
+    <!--                and title = #{title}-->
+    <!--            </if>-->
+    <!--            <if test="author != null">-->
+    <!--                and author = #{author}-->
+    <!--            </if>-->
+    <!--        </select>-->
+
+    <sql id="if-title-author">
+        <if test="title != null">
+            title = #{title}
+        </if>
+        <if test="author != null">
+            and author = #{author}
+        </if>
+    </sql>
+    
+    <select id="queryBlogIf" parameterType="map" resultType="blog">
+        select * from blog
+        <!--
+            where 元素只会在子元素返回任何内容的情况下才插入 “WHERE” 子句。
+            而且，若子句的开头为 “AND” 或 “OR”，where 元素也会将它们去除。
+        -->
+        <where>
+            <!-- 引用 sql 片段，如果refid 指定的不在本文件中，那么需要在前面加上 namespace -->
+            <include refid="if-title-author"/>
+            <!-- 在这里还可以引用其他的 sql 片段 -->
+        </where>
+    </select>
+
+    <select id="queryBlogChoose" parameterType="map" resultType="Blog">
+        select * from blog
+        <where>
+            <choose>
+                <when test="title != null">
+                    title = #{title}
+                </when>
+                <when test="author != null">
+                    and author = #{author}
+                </when>
+                <otherwise>
+                    and views = #{views}
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+
+    <!--注意set是用的逗号隔开-->
+    <update id="updateBlogSet" parameterType="map">
+        update blog
+        <set>
+            <if test="title != null">
+                title = #{title},
+            </if>
+            <if test="author != null">
+                author = #{author}
+            </if>
+        </set>
+        where id = #{id};
+    </update>
+
+    <select id="queryBlogForeach" parameterType="map" resultType="blog">
+        select * from blog
+        <where>
+            <!--
+            collection:指定输入对象中的集合属性
+            item:每次遍历生成的对象
+            open:开始遍历时的拼接字符串
+            close:结束时拼接的字符串
+            separator:遍历对象之间需要拼接的字符串
+            select * from blog where 1=1 and (id=1 or id=2 or id=3)
+          -->
+            <foreach collection="ids" item="id" open="and (" close=")" separator="or">
+                id=#{id}
+            </foreach>
+        </where>
+    </select>
+
+
+</mapper>
