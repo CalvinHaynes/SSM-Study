@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.calvinhaynes.mapper.StudentMapper">
+    <!--查询学生完整信息有两种思路：
+        第一种：按照查询嵌套处理（MySQL子查询）
+        第二种：按照结果嵌套处理（MySQL联表查询）
+    -->
+
+    <!--方式一：查询嵌套-->
+    <!--主要思路：
+        1.查询所有学生信息
+        2.根据查询出来的学生的tid查询特定的老师（子查询）(结果集映射）
+    -->
+    <select id="getStudentFullInfo" resultMap="studentToTeacher">
+        select *
+        from student;
+    </select>
+    <!--子查询-->
+    <resultMap id="studentToTeacher" type="Student">
+        <!--property：类属性名  column：数据库字段名 -->
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <!--多对一映射用association标签-->
+        <!--select：SQL子查询 javaType：对应property的类型-->
+        <association property="teacher" column="tid" javaType="Teacher" select="getTeacher">
+            <!--Teacher的属性id和数据库中字段名tid映射-->
+            <result property="id" column="tid"/>
+        </association>
+    </resultMap>
+    <select id="getTeacher" resultType="Teacher">
+        select *
+        from teacher
+        where id = #{tid};
+    </select>
+
+    <!--=========================================================================================-->
+    <!--方式二：结果嵌套(联表查询)-->
+    <!--思路：
+        1.写好查询信息的完整SQL语句
+        2.根据SQL语句的各个查询结果利用resultMap说明查询结果和数据库中数据名的一一映射关系
+    -->
+    <select id="getStudentFullInfo2" resultMap="studentToTeacher2">
+        select s.id sid, s.name sname, t.id, t.name tname
+        from student s,
+             teacher t
+        where t.id = s.tid;
+    </select>
+    <!--对于查询需要得到的各个结果的一一映射关系说明-->
+    <!--首先得到的结果一定是个Student，Student中有id，name和teacher的各个信息-->
+    <resultMap id="studentToTeacher2" type="Student">
+        <result property="id" column="sid"/>
+        <result property="name" column="sname"/>
+        <!--Teacher的结果首先类型肯定是个Teacher类，然后信息有id和name-->
+        <association property="teacher" javaType="Teacher">
+            <result property="id" column="id"/>
+            <result property="name" column="tname"/>
+        </association>
+    </resultMap>
+</mapper>

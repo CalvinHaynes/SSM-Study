@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--相当于 UserMapper 接口的实现类，只不过是XML写法-->
+<!-- mapper namespace属性=实现的接口-->
+<mapper namespace="top.calvinhaynes.mapper.UserMapper">
+
+    <!--通过用户ID查询用户-->
+    <!--    <select id="selectUserById" resultType="user">-->
+    <!--        select * from users where id=#{id};-->
+    <!--    </select>-->
+
+    <!--通过用户ID查询用户 resultMap结果值映射-->
+    <resultMap id="userMap" type="top.calvinhaynes.pojo.User">
+        <result column="password" property="pwd"/>
+    </resultMap>
+
+    <select id="selectUserById" resultMap="userMap">
+        select *
+        from users
+        where id = #{id};
+    </select>
+
+</mapper>

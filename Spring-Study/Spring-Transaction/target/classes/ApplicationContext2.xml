@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+    <!--方式二配置文件导入，其实就是通用配置文件spring-dao.xml，为了清晰一点-->
+    <import resource="sqlSessionDaoSupport.xml"/>
+
+    <!--方式二注册bean-->
+    <bean id="userMapper" class="top.calvinhaynes.mapper.UserMapperImpl">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+        <!--<property name="sqlSessionTemplate" ref="sqlSessionTemplate"/>-->
+    </bean>
+
+    <!--JDBC事务管理器配置-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!--结合AOP实现事务的织入-->
+    <!--配置事务通知-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <!--给哪些方法配置事务-->
+        <!--配置事务的传播特性： propagation: REQUIRED-->
+        <tx:attributes>
+            <tx:method name="addUser" propagation="REQUIRED"/>
+            <tx:method name="deleteUserById" propagation="REQUIRED"/>
+            <tx:method name="updateUserByName" propagation="REQUIRED"/>
+            <tx:method name="queryUser" propagation="REQUIRED"/>
+            <tx:method name="*" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <aop:config>
+        <aop:pointcut id="txPointCut" expression="execution(* top.calvinhaynes.mapper.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointCut" />
+    </aop:config>
+
+</beans>

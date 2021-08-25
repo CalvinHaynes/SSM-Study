@@ -4,58 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e9af8f8-3303-4c0d-9b0a-4bc4b6a5c60a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../MyBatis-Study/docs/事务.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/src/main/java/top/calvinhaynes/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/src/main/java/top/calvinhaynes/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/src/main/java/top/calvinhaynes/mapper/UserMapperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/src/main/java/top/calvinhaynes/mapper/UserMapperImpl2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/src/main/java/top/calvinhaynes/pojo/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/src/main/resources/ApplicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/src/main/resources/spring-dao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/src/main/resources/sqlSessionDaoSupport.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/src/main/resources/sqlSessionTemplate.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/src/test/java/top/calvinhaynes/mapper/AllTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/target/classes/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/target/classes/spring-dao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/target/classes/top/calvinhaynes/mapper/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/target/classes/top/calvinhaynes/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/target/classes/top/calvinhaynes/mapper/UserMapperImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/target/classes/top/calvinhaynes/pojo/Users.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/target/classes/top/calvinhaynes/utils/MyBatisUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Spring-MyBatis/target/test-classes/top/calvinhaynes/mapper/AllTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/calvinhaynes/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/calvinhaynes/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/calvinhaynes/mapper/UserMapperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/calvinhaynes/pojo/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ApplicationContext2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-dao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sqlSessionDaoSupport.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sqlSessionTemplate.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/top/calvinhaynes/mapper/AllTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MyBatis-Study/Lombok的使用.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyBatis-Study/docs/Lombok的使用.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MyBatis-Study/MyBatis-1-JDBC/SQLInjection.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyBatis-Study/docs/SQLInjection_SQL注入.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MyBatis-Study/MyBatis执行流程分析.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyBatis-Study/docs/MyBatis执行流程分析.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-MyBatis/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-MyBatis/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-MyBatis/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-MyBatis/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-MyBatis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-MyBatis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-MyBatis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-MyBatis/pom.xml" afterDir="false" />
+    <list default="true" id="9e9af8f8-3303-4c0d-9b0a-4bc4b6a5c60a" name="Changes" comment="更新Spring和MyBatis的相关内容">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,8 +115,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1629724160880</updated>
-      <workItem from="1629724162152" duration="5312000" />
+      <workItem from="1629724162152" duration="5467000" />
+      <workItem from="1629732144950" duration="755000" />
+      <workItem from="1629764878413" duration="40000" />
     </task>
+    <task id="LOCAL-00001" summary="更新Spring和MyBatis的相关内容">
+      <created>1629732035081</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1629732035081</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,5 +142,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更新Spring和MyBatis的相关内容" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新Spring和MyBatis的相关内容" />
   </component>
 </project>

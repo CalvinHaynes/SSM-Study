@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--方式一配置文件导入-->
+    <import resource="sqlSessionTemplate.xml"/>
+
+    <!--方式一注册bean-->
+    <bean id="userMapper" class="top.calvinhaynes.mapper.UserMapperImpl">
+        <property name="sqlSession" ref="sqlSessionTemplate"/>
+    </bean>
+
+    <!--方式二配置文件导入，其实就是通用配置文件spring-dao.xml，为了清晰一点-->
+    <import resource="sqlSessionDaoSupport.xml"/>
+
+    <!--方式二注册bean-->
+    <bean id="userMapper2" class="top.calvinhaynes.mapper.UserMapperImpl2">
+<!--        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>-->
+        <property name="sqlSessionTemplate" ref="sqlSessionTemplate"/>
+    </bean>
+
+</beans>
