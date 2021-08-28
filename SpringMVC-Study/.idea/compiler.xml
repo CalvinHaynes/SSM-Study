@@ -6,7 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringMVC-Study" />
+        <module name="3-ServletContext" />
+        <module name="4-ServletResponse" />
+        <module name="1-JavaWeb" />
+        <module name="2-HelloServlet" />
       </profile>
     </annotationProcessing>
   </component>
