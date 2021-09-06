@@ -10,6 +10,7 @@
         <module name="3-ServletContext" />
         <module name="7-HelloSpringMVC" />
         <module name="6-Servlet-Cookie-Session" />
+        <module name="8-HelloSpringMVC-Annotation" />
         <module name="1-JavaWeb" />
         <module name="2-HelloServlet" />
         <module name="5-ServletRequest" />
@@ -23,6 +24,7 @@
       <module name="5-ServletRequest" target="1.7" />
       <module name="6-Servlet-Cookie-Session" target="1.7" />
       <module name="7-HelloSpringMVC" target="1.7" />
+      <module name="8-HelloSpringMVC-Annotation" target="1.7" />
       <module name="SpringMVC-Study" target="8" />
     </bytecodeTargetLevel>
   </component>

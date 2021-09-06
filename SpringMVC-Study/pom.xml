@@ -16,6 +16,7 @@
         <module>5-ServletRequest</module>
         <module>6-Servlet-Cookie-Session</module>
         <module>7-HelloSpringMVC</module>
+        <module>8-HelloSpringMVC-Annotation</module>
     </modules>
 
     <properties>

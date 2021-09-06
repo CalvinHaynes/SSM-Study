@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.apache.tomcat:tomcat-el-api:10.0.10">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-el-api/10.0.10/tomcat-el-api-10.0.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Software/JAVA/apache-maven-3.8.1-bin/Maven_Repository/org/apache/tomcat/tomcat-el-api/10.0.10/tomcat-el-api-10.0.10.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-el-api/10.0.10/tomcat-el-api-10.0.10-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Software/JAVA/apache-maven-3.8.1-bin/Maven_Repository/org/apache/tomcat/tomcat-el-api/10.0.10/tomcat-el-api-10.0.10-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-el-api/10.0.10/tomcat-el-api-10.0.10-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Software/JAVA/apache-maven-3.8.1-bin/Maven_Repository/org/apache/tomcat/tomcat-el-api/10.0.10/tomcat-el-api-10.0.10-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

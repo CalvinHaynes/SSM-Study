@@ -7,8 +7,10 @@
     <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
     <!-- 处理器适配器-->
     <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
-    <!--视图解析器:DispatcherServlet给他的ModelAndView-->
+    <!-- 视图解析器:DispatcherServlet给他的ModelAndView-->
+    <!-- 内置的视图解析器，未来用到很多模板引擎比如Thymeleaf，Freemaker-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="InternalResourceViewResolver">
+        <!--前缀和后缀用于拼接jsp页面的路径-->
         <!--前缀-->
         <property name="prefix" value="/WEB-INF/jsp/"/>
         <!--后缀-->
