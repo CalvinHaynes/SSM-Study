@@ -89,3 +89,21 @@ int SC_GATEWAY_TIMEOUT = 504;
 int SC_HTTP_VERSION_NOT_SUPPORTED = 505;
 ```
 
+## 几个HttpServletResponse的实际应用
+
+### 1 - 下载文件的实现
+
+位于`top.calvinhaynes.servlet.DownloadFile`中
+
+### 2 - 验证码实现
+
+位于`top.calvinhaynes.servlet.VerificationCode`中
+
+### 3 - 重定向实现（重要）
+
+**重定向过程：**客户浏览器发送http请求----》web服务器接受后发送302状态码响应及对应新的location给客户浏览器--》客户浏览器发现是302响应，则**自动**再发送一个新的http请求，请求url是新的location地址----》服务器根据此请求寻找资源并发送给客户。
+
+在这里location可以重定向到任意URL，既然是浏览器重新发出了请求，则就没有什么request传递的概念了。在客户浏览器路径栏显示的是其重定向的路径，客户可以观察到地址的变化的。重定向行为是浏览器做了至少两次的访问请求的。
+
+
+

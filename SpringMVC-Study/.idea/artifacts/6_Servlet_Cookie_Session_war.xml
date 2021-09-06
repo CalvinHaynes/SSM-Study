@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="6-Servlet-Cookie-Session:war">
+    <output-path>$PROJECT_DIR$/6-Servlet-Cookie-Session/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>false</exploded>
+        <module>6-Servlet-Cookie-Session</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="archive" name="6-Servlet-Cookie-Session.war">
+      <element id="artifact" artifact-name="6-Servlet-Cookie-Session:war exploded" />
+    </root>
+  </artifact>
+</component>

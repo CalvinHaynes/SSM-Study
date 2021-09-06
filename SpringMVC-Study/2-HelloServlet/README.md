@@ -69,17 +69,44 @@ web.xml文件是Java web项目中的一个配置文件，主要用于配置欢�
 
 ### 4 - 编写HelloServlet类实现HTTPServlet接口
 
-​		由于用到了HTTPServlet接口，一般Servlet的框架是由两个Java包组成的：javax.servlet与javax.servlet.http。在javax.servlet包中定义了所有的Servlet类都必须实现或者扩展的通用接口和类。在javax.servlet.http包中定义了采用Http协议通信的HttpServlet类。
+> 由于用到了HTTPServlet接口，一般使用[ServletAPI（超链接附Maven仓库地址）](https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api/4.0.1)都是使用两个jar包：javax.servlet与javax.servlet.http。
+>
+> - 在javax.servlet包中定义了所有的Servlet类都必须实现或者扩展的通用接口和类。
+>
+> - 在javax.servlet.http包中定义了采用Http协议通信的HttpServlet类。
 
-​		但是在利用Maven导入依赖的时候一再出错，所以我采用了导入Tomcat内置的Servlet的办法，源代码没差
+**但是由于本项目中使用的是新版本的Tomcat 10，Tomcat 10最大的变动就是Tomcat 10 m1将JavaEE也换成了Jakarta® EE**
+**Jakarta® EE较以前的JavaEE有一个非常非常重要的更新：包名不再是"javax.servlet.“而是改成了"jakarta.servlet.”**
 
-#### 导入项目依赖的Jar包
+所以此项目我们导入jakarta.servlet包中的ServletAPI，Maven仓库搜索servlet-api，其中第四个就是
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.1p4hmjhtpyhs.png)
+![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.vcevye8ksow.png)
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.6a5t2oqbgwc0.png)
+==导入tomcat-servlet-api依赖（选择自己Tomcat版本的，比如我的就是Tomcat10.0.10）：==
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.2kp5ovdhdhe0.png)
+```xml
+<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-servlet-api -->
+<dependency>
+    <groupId>org.apache.tomcat</groupId>
+    <artifactId>tomcat-servlet-api</artifactId>
+    <version>10.0.10</version>
+</dependency>
+```
+
+**同理，Jsp-api也导入Tomcat内置的**：
+
+![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.4p4jcxm16w80.png)
+
+==导入tomcat-jsp-api依赖（选择自己Tomcat版本的，比如我的就是Tomcat10.0.10）：==
+
+```xml
+<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jsp-api -->
+<dependency>
+    <groupId>org.apache.tomcat</groupId>
+    <artifactId>tomcat-jsp-api</artifactId>
+    <version>10.0.10</version>
+</dependency>
+```
 
 #### 编写HelloServlet类
 
@@ -150,7 +177,9 @@ public class HelloServlet extends HttpServlet {
 
 #### 3.部署到Maven项目中（Fix上图的warning）
 
-将Tomcat环境部署到我们想要使用Tomcat的JavaWeb项目中，可以通过下面的Application Context配置访问项目的URL地址
+- 将Tomcat环境部署到我们想要使用Tomcat的JavaWeb项目中
+
+- 可以通过下面的Application Context自定义配置访问项目的URL地址
 
 ![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.10eyrofk3bcw.png)
 

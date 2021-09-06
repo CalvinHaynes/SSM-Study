@@ -5,5 +5,13 @@
     <file url="file://$PROJECT_DIR$/2-HelloServlet/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/3-ServletContext/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/3-ServletContext/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/4-ServletResponse/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/4-ServletResponse/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/5-ServletRequest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/5-ServletRequest/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/6-Servlet-Cookie-Session/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/6-Servlet-Cookie-Session/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/7-HelloSpringMVC/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/7-HelloSpringMVC/src/main/resources" charset="UTF-8" />
   </component>
 </project>

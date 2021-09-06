@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.net.URLEncoder;
 
 /**
- * 下载文件
+ * 利用ServletResponse实现下载文件
  *
  * @author CalvinHaynes
  * @date 2021/08/28
@@ -34,7 +34,7 @@ public class DownloadFile extends HttpServlet {
         byte[] buffer = new byte[1024];
         //6.获取OutputStream对象
         ServletOutputStream out = resp.getOutputStream();
-        //7. 将FileOutputStream流写入到buffer缓冲区,使用OutputStream将缓冲区中的数据输出到客户端！
+        //7. 将文件输入流读入到buffer缓冲区,使用输出流将缓冲区中的数据写入客户端中！
         while ((len = in.read(buffer)) > 0) {
             out.write(buffer, 0, len);
         }

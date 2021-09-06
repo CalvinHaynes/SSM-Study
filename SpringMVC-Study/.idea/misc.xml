@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/1-JavaWeb" />
     <file type="web" url="file://$PROJECT_DIR$/2-HelloServlet" />
     <file type="web" url="file://$PROJECT_DIR$/3-ServletContext" />
     <file type="web" url="file://$PROJECT_DIR$/4-ServletResponse" />
+    <file type="web" url="file://$PROJECT_DIR$/5-ServletRequest" />
+    <file type="web" url="file://$PROJECT_DIR$/6-Servlet-Cookie-Session" />
+    <file type="web" url="file://$PROJECT_DIR$/7-HelloSpringMVC" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -14,7 +16,5 @@
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out" />
-  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>

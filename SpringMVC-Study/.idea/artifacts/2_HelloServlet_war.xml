@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="2-HelloServlet:war">
+    <output-path>$PROJECT_DIR$/2-HelloServlet/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>false</exploded>
+        <module>2-HelloServlet</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="archive" name="2-HelloServlet.war">
+      <element id="artifact" artifact-name="2-HelloServlet:war exploded" />
+    </root>
+  </artifact>
+</component>

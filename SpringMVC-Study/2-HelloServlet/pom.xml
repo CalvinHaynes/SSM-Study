@@ -17,6 +17,12 @@
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
 
+  <parent>
+    <groupId>top.calvinhaynes</groupId>
+    <artifactId>SpringMVC-Study</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
   <dependencies>
   </dependencies>
 

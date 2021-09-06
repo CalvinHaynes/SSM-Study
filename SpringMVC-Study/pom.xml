@@ -13,6 +13,9 @@
         <module>2-HelloServlet</module>
         <module>3-ServletContext</module>
         <module>4-ServletResponse</module>
+        <module>5-ServletRequest</module>
+        <module>6-Servlet-Cookie-Session</module>
+        <module>7-HelloSpringMVC</module>
     </modules>
 
     <properties>
@@ -28,7 +31,33 @@
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- Tomcat10内置Servlet的依赖导入-->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-servlet-api -->
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-servlet-api</artifactId>
+            <version>10.0.10</version>
+        </dependency>
+
+        <!-- Tomcat10内置JSP的依赖导入-->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jsp-api -->
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-jsp-api</artifactId>
+            <version>10.0.10</version>
+        </dependency>
+
+        <!-- SpringMVC所需依赖-->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.3.9</version>
+        </dependency>
+
     </dependencies>
+
 
     <!--在项目根的pom.xml中加入此,解决整个项目的Maven静态资源过滤问题 -->
     <build>

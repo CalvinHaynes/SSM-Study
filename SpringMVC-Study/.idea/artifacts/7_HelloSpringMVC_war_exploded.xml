@@ -1,0 +1,41 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="7-HelloSpringMVC:war exploded">
+    <output-path>$PROJECT_DIR$/7-HelloSpringMVC/target/7-HelloSpringMVC</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>7-HelloSpringMVC</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="7-HelloSpringMVC" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:4.0.1" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp:javax.servlet.jsp-api:2.3.3" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:jstl-api:1.2" />
+          <element id="library" level="project" name="Maven: org.glassfish.web:jstl-impl:1.2" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-servlet-api:10.0.10" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jsp-api:10.0.10" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-el-api:10.0.10" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.3.9" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.3.9" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.3.9" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.3.9" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.3.9" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.3.9" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.3.9" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.3.9" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/7-HelloSpringMVC/target/7-HelloSpringMVC/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="7-HelloSpringMVC/web/Web" />
+    </root>
+  </artifact>
+</component>

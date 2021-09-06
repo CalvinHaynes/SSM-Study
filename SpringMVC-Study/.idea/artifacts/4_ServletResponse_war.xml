@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="4-ServletResponse:war">
+    <output-path>$PROJECT_DIR$/4-ServletResponse/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>false</exploded>
+        <module>4-ServletResponse</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="archive" name="4-ServletResponse.war">
+      <element id="artifact" artifact-name="4-ServletResponse:war exploded" />
+    </root>
+  </artifact>
+</component>

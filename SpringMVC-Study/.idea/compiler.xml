@@ -6,11 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="3-ServletContext" />
         <module name="4-ServletResponse" />
+        <module name="3-ServletContext" />
+        <module name="7-HelloSpringMVC" />
+        <module name="6-Servlet-Cookie-Session" />
         <module name="1-JavaWeb" />
         <module name="2-HelloServlet" />
+        <module name="5-ServletRequest" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="1-JavaWeb" target="1.7" />
+      <module name="2-HelloServlet" target="1.7" />
+      <module name="3-ServletContext" target="1.7" />
+      <module name="4-ServletResponse" target="1.7" />
+      <module name="5-ServletRequest" target="1.7" />
+      <module name="6-Servlet-Cookie-Session" target="1.7" />
+      <module name="7-HelloSpringMVC" target="1.7" />
+      <module name="SpringMVC-Study" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
