@@ -22,23 +22,44 @@
          version="5.0"
          metadata-complete="true">
 
-  <!--1.注册DispatcherServlet-->
-  <servlet>
-    <servlet-name>springmvc</servlet-name>
-    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-    <!--关联一个springmvc的配置文件:【servlet-name】-servlet.xml-->
-    <init-param>
-      <param-name>contextConfigLocation</param-name>
-      <param-value>classpath:springmvc-servlet.xml</param-value>
-    </init-param>
-    <!--启动级别-1 : 服务器启动他就跟着启动-->
-    <load-on-startup>1</load-on-startup>
-  </servlet>
-  <!--/ 匹配所有的请求；（不包括.jsp）-->
-  <!--/* 匹配所有的请求；（包括.jsp）-->
-  <servlet-mapping>
-    <servlet-name>springmvc</servlet-name>
-    <url-pattern>/</url-pattern>
-  </servlet-mapping>
+    <!--1.注册DispatcherServlet-->
+    <servlet>
+        <servlet-name>springmvc</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <!--关联一个springmvc的配置文件:【servlet-name】-servlet.xml-->
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:springmvc-servlet.xml</param-value>
+        </init-param>
+        <!--启动级别-1 : 服务器启动他就跟着启动-->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <!--/ 匹配所有的请求；（不包括.jsp）-->
+    <!--/* 匹配所有的请求；（包括.jsp）-->
+    <servlet-mapping>
+        <servlet-name>springmvc</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
 
+    <!-- SpringMVC给我们提供了一个过滤器CharacterEncodingFilter用于过滤编码问题-->
+<!--    <filter>-->
+<!--        <filter-name>encoding</filter-name>-->
+<!--        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>-->
+<!--        <init-param>-->
+<!--            <param-name>encoding</param-name>-->
+<!--            <param-value>utf-8</param-value>-->
+<!--        </init-param>-->
+<!--    </filter>-->
+<!--    <filter-mapping>-->
+<!--        <filter-name>encoding</filter-name>-->
+<!--        <url-pattern>/*</url-pattern>-->
+<!--    </filter-mapping>-->
+    <filter>
+        <filter-name>encoding</filter-name>
+        <filter-class>top.calvinhaynes.filter.GenericEncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>encoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 </web-app>

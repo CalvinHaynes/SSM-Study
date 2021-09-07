@@ -13,5 +13,7 @@
     <file url="file://$PROJECT_DIR$/6-Servlet-Cookie-Session/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/7-HelloSpringMVC/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/7-HelloSpringMVC/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/8-HelloSpringMVC-Annotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/8-HelloSpringMVC-Annotation/src/main/resources" charset="UTF-8" />
   </component>
 </project>
