@@ -125,7 +125,7 @@ public class HelloController {
 
 通常，我们只需要**手动配置视图解析器**，而**处理器映射器**和**处理器适配器**只需要开启**注解驱动**即可，而省去了大段的xml配置
 
-## 结果跳转方式
+## 结果跳转方式（转发和重定向）
 
 ### ModelAndView
 
@@ -272,7 +272,7 @@ public class ForwardAndRedirect2 {
 
 ### 处理提交数据
 
-**1、提交的域名称和处理方法的参数名一致**
+#### **1、提交的域名称和处理方法的参数名一致**
 
 提交数据 : http://localhost:8080/hello2?name=CalvinHaynes
 
@@ -294,7 +294,7 @@ public class ForwardAndRedirect2 {
 
 后台输出 : CalvinHaynes
 
-**2、提交的域名称和处理方法的参数名不一致**
+#### **2、提交的域名称和处理方法的参数名不一致**
 
 提交数据 : http://localhost:8080/hello3?username=CalvinHaynes
 
@@ -316,7 +316,7 @@ public class ForwardAndRedirect2 {
 
 后台输出 : CalvinHaynes
 
-**3、提交的是一个对象**
+#### **3、提交的是一个对象**
 
 要求提交的表单域和对象的属性名一致  , 参数使用对象即可
 
@@ -638,9 +638,35 @@ public ModelAndView helloWorld() {
 } 
 ```
 
-**Model** ： 只有寥寥几个方法只适合用于储存数据，简化了新手对于Model对象的操作和理解，是一个包含四个addAttribute和一个mergeAttributes方法的接口。
+> **Model** ： 只有寥寥几个方法只适合用于储存数据，简化了新手对于Model对象的操作和理解，是一个包含四个addAttribute和一个mergeAttributes方法的接口。
+>
+> **ModelMap** ： 继承了 LinkedMap ，除了实现了自身的一些方法，同样的继承 LinkedMap 的方法和特性；
+>
+> **ModelAndView** ：可以在储存数据的同时，进行设置返回的逻辑视图，进行控制展示层的跳转。
 
-**ModelMap** ： 继承了 LinkedMap ，除了实现了自身的一些方法，同样的继承 LinkedMap 的方法和特性；
+## Restful风格
 
-**ModelAndView** ：可以在储存数据的同时，进行设置返回的逻辑视图，进行控制展示层的跳转。
+```java
+/**
+ * 实行Restful风格的Controller
+ *
+ * @author CalvinHaynes
+ * @date 2021/09/06
+ */
+@Controller
+public class RestfulController {
+
+//    @RequestMapping(value="/restful/{a}/{b}",method= RequestMethod.GET)
+
+    @GetMapping("/restful/{a}/{b}")
+    public String test1(@PathVariable int a, @PathVariable int b, Model model) {
+
+        int result = a + b;
+
+        model.addAttribute("msg", "RestfulController:result=" + result);
+
+        return "rest";
+    }
+}
+```
 

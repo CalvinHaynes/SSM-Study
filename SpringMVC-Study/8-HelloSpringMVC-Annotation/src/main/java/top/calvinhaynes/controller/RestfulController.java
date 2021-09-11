@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
+ * 实行Restful风格的Controller
  *
  * @author CalvinHaynes
  * @date 2021/09/06
@@ -18,11 +19,11 @@ public class RestfulController {
 //    @RequestMapping(value="/restful/{a}/{b}",method= RequestMethod.GET)
 
     @GetMapping("/restful/{a}/{b}")
-    public String test1(@PathVariable int a,@PathVariable int b, Model model) {
+    public String test1(@PathVariable int a, @PathVariable int b, Model model) {
 
         int result = a + b;
 
-        model.addAttribute("msg","RestfulController:result=" + result);
+        model.addAttribute("msg", "RestfulController:result=" + result);
 
         return "rest";
     }

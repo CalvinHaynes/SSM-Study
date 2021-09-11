@@ -6,7 +6,7 @@
 
 设置此Module为标准化模组，后面可以直接复制
 
-## 配置文件（XML）详解
+## MyBatis配置文件（config.xml）详解
 
 ### 核心配置文件
 
@@ -265,5 +265,65 @@ public class Author {
 
 这些配置会告诉 MyBatis 去哪里找映射文件，剩下的细节就应该是每个 SQL 映射文件了，也就是接下来我们要讨论的。
 
-### 映射配置文件
+## [映射配置文件（mapper.xml）详解](https://mybatis.org/mybatis-3/zh/sqlmap-xml.html#)
+
+### **在映射配置文件写SQL语句，取代JDBC。**
+
+SQL 映射文件只有很少的几个顶级元素（按照应被定义的顺序列出）：
+
+- `cache` – 该命名空间的缓存配置。
+- `cache-ref` – 引用其它命名空间的缓存配置。
+- `resultMap` – 描述如何从数据库结果集中加载对象，是最复杂也是最强大的元素。
+- `parameterMap` – 老式风格的参数映射。此元素已被废弃，并可能在将来被移除！请使用行内参数映射。文档中不会介绍此元素。
+- `sql` – 可被其它语句引用的可重用语句块。
+- `insert` – 映射插入语句。
+- `update` – 映射更新语句。
+- `delete` – 映射删除语句。
+- `select` – 映射查询语句。
+
+下一部分将从语句本身开始来描述每个元素的细节。
+
+### select
+
+查询语句是 MyBatis 中最常用的元素之一——光能把数据存到数据库中价值并不大，还要能重新取出来才有用，多数应用也都是查询比修改要频繁。 MyBatis 的基本原则之一是：在每个插入、更新或删除操作之间，通常会执行多个查询操作。因此，MyBatis 在查询和结果映射做了相当多的改进。一个简单查询的 select 元素是非常简单的。比如：
+
+```xml
+<select id="selectPerson" parameterType="int" resultType="hashmap">
+  SELECT * FROM PERSON WHERE ID = #{id}
+</select>
+```
+
+**这个语句名为 selectPerson，接受一个 int（或 Integer）类型的参数，并返回一个 HashMap 类型的对象，其中的键是列名，值便是结果行中的对应值。**
+
+注意参数符号：
+
+```xml
+#{id}
+```
+
+### insert, update 和 delete
+
+数据变更语句 insert，update 和 delete 的实现非常接近：
+
+示例如下：
+
+```xml
+<insert id="insertAuthor" paramType="Author">
+  insert into Author (id,username,password,email,bio)
+  values (#{id},#{username},#{password},#{email},#{bio})
+</insert>
+
+<update id="updateAuthor" paramType="Author" >
+  update Author set
+    username = #{username},
+    password = #{password},
+    email = #{email},
+    bio = #{bio}
+  where id = #{id}
+</update>
+
+<delete id="deleteAuthor" paramType="int" >
+  delete from Author where id = #{id}
+</delete>
+```
 

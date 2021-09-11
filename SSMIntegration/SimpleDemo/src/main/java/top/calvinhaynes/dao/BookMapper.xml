@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.calvinhaynes.dao.BookMapper">
+
+    <insert id="addBook" parameterType="books">
+        insert into ssmintegration.books(`book_id`, book_name, book_counts, detail)
+        values (#{bookId}, #{bookName}, #{bookCounts}, #{detail});
+    </insert>
+
+    <delete id="deleteBookById" parameterType="int">
+        delete
+        from ssmintegration.books
+        where book_id = #{bookId};
+    </delete>
+
+    <update id="updateBookById" parameterType="books">
+        update ssmintegration.books
+        set book_name   = #{bookName},
+            book_counts = #{bookCounts},
+            detail      = #{detail}
+        where book_id = #{bookId};
+    </update>
+
+    <select id="selectBookById" resultType="books">
+        select *
+        from ssmintegration.books
+        where book_id = #{bookId};
+    </select>
+
+    <select id="selectAllBooks" resultType="books">
+        select *
+        from ssmintegration.books;
+    </select>
+
+    <select id="queryBookByName" resultType="books">
+        select *
+        from ssmintegration.books
+        where book_name = #{bookName};
+    </select>
+</mapper>

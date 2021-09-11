@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/6-Servlet-Cookie-Session/6-Servlet-Cookie-Session.iml" filepath="$PROJECT_DIR$/6-Servlet-Cookie-Session/6-Servlet-Cookie-Session.iml" />
       <module fileurl="file://$PROJECT_DIR$/7-HelloSpringMVC/7-HelloSpringMVC.iml" filepath="$PROJECT_DIR$/7-HelloSpringMVC/7-HelloSpringMVC.iml" />
       <module fileurl="file://$PROJECT_DIR$/8-HelloSpringMVC-Annotation/8-HelloSpringMVC-Annotation.iml" filepath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/8-HelloSpringMVC-Annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/9-SpringMVC-Ajax/9-SpringMVC-Ajax.iml" filepath="$PROJECT_DIR$/9-SpringMVC-Ajax/9-SpringMVC-Ajax.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringMVC-Study.iml" filepath="$PROJECT_DIR$/SpringMVC-Study.iml" />
     </modules>
   </component>

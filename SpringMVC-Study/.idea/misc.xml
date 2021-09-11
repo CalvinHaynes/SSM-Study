@@ -9,6 +9,7 @@
     <file type="web" url="file://$PROJECT_DIR$/6-Servlet-Cookie-Session" />
     <file type="web" url="file://$PROJECT_DIR$/7-HelloSpringMVC" />
     <file type="web" url="file://$PROJECT_DIR$/8-HelloSpringMVC-Annotation" />
+    <file type="web" url="file://$PROJECT_DIR$/9-SpringMVC-Ajax" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
