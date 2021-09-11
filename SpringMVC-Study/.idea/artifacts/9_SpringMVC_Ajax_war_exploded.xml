@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="9-SpringMVC-Ajax:war exploded">
+    <output-path>$PROJECT_DIR$/9-SpringMVC-Ajax/target/9-SpringMVC-Ajax</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>9-SpringMVC-Ajax</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="9-SpringMVC-Ajax" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/9-SpringMVC-Ajax/target/9-SpringMVC-Ajax/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="9-SpringMVC-Ajax/web/Web" />
+    </root>
+  </artifact>
+</component>
