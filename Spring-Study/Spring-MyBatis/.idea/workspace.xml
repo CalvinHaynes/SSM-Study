@@ -4,56 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="544a9133-7267-46b6-acda-d1739084f500" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/.idea/artifacts/SimpleDemo_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/SimpleDemo/SimpleDemo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/SimpleDemo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/SimpleDemo/src/main/java/top/calvinhaynes/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/SimpleDemo/src/main/java/top/calvinhaynes/dao/BookMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/SimpleDemo/src/main/java/top/calvinhaynes/dao/BookMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/SimpleDemo/src/main/java/top/calvinhaynes/pojo/Books.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/SimpleDemo/src/main/java/top/calvinhaynes/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/SimpleDemo/src/main/java/top/calvinhaynes/service/BookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/SimpleDemo/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/SimpleDemo/src/main/resources/database.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/SimpleDemo/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/SimpleDemo/src/main/resources/spring-dao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/SimpleDemo/src/main/resources/spring-mvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/SimpleDemo/src/main/resources/spring-service.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/SimpleDemo/webapp/WEB-INF/jsp/addBook.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/SimpleDemo/webapp/WEB-INF/jsp/allBook.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/SimpleDemo/webapp/WEB-INF/jsp/updateBook.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/SimpleDemo/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/SimpleDemo/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SSMIntegration/docs/问题清单.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SpringMVC-Study/9-SpringMVC-Ajax/9-SpringMVC-Ajax.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SpringMVC-Study/9-SpringMVC-Ajax/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SpringMVC-Study/9-SpringMVC-Ajax/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SpringMVC-Study/9-SpringMVC-Ajax/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SpringMVC-Study/9-SpringMVC-Ajax/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MyBatis-Study/MyBatis-3-ConfigurationOptimization/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyBatis-Study/MyBatis-3-ConfigurationOptimization/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b989640a-578c-4b25-aa55-5fe6d9814533.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b989640a-578c-4b25-aa55-5fe6d9814533.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SpringMVC-Study/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringMVC-Study/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SpringMVC-Study/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringMVC-Study/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SpringMVC-Study/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringMVC-Study/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SpringMVC-Study/8-HelloSpringMVC-Annotation/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringMVC-Study/8-HelloSpringMVC-Annotation/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SpringMVC-Study/8-HelloSpringMVC-Annotation/src/main/java/top/calvinhaynes/controller/RestfulController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringMVC-Study/8-HelloSpringMVC-Annotation/src/main/java/top/calvinhaynes/controller/RestfulController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SpringMVC-Study/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SpringMVC-Study/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="544a9133-7267-46b6-acda-d1739084f500" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,6 +123,7 @@
       <workItem from="1631105234396" duration="813000" />
       <workItem from="1631115636823" duration="31000" />
       <workItem from="1631253901727" duration="297000" />
+      <workItem from="1631623573097" duration="19000" />
     </task>
     <servers />
   </component>
