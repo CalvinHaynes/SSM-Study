@@ -8,12 +8,12 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import java.io.IOException;
 import java.io.InputStream;
 
+
 /**
- * MyBatis自定义工具类
- * The type My batis utils.
+ * MyBatis工具类
  *
  * @author CalvinHaynes
- * @date 2021/08/23
+ * @date 2021/09/22
  */
 public class MyBatisUtils {
 
@@ -31,11 +31,10 @@ public class MyBatisUtils {
     }
 
     /**
-     * Get session sql session.
+     * 从SqlSessionFactory 中获取 SqlSession
      *
-     * @return the sql session
+     * @return {@link SqlSession}
      */
-//从SqlSessionFactory 中获取 SqlSession
     public static SqlSession getSession() {
         return sqlSessionFactory.openSession();
     }

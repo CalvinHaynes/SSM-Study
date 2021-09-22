@@ -1,5 +1,11 @@
 package top.calvinhaynes.pojo;
 
+/**
+ * 用户
+ *
+ * @author CalvinHaynes
+ * @date 2021/09/22
+ */
 public class User {
     private int id;
     private String name;

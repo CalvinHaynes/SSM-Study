@@ -2,14 +2,20 @@ package top.calvinhaynes.mapper;
 
 import top.calvinhaynes.pojo.User;
 
+
 /**
- * @ProjectName: UserMapper
- * @Author: CalvinHaynes
- * @Date: 2021/8/18 12:56
- * @Description:UserMapper接口(CRUD）
+ * UserMapper接口(CRUD）
+ *
+ * @author CalvinHaynes
+ * @date 2021/09/22
  */
 public interface UserMapper {
-    //按ID查询User
+    /**
+     * 按ID查询User
+     *
+     * @param i 我
+     * @return {@link User}
+     */
     User selectUserById(int i);
 
 }
