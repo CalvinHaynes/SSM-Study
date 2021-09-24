@@ -8,6 +8,10 @@
         <property name="pwd" value="412523chx"/>
     </properties>
 
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
     <typeAliases>
         <package name="top.calvinhaynes.pojo"/>
     </typeAliases>

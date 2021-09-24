@@ -10,7 +10,29 @@ SUN 公司为了简化开发人员（对数据库的统一）的操作，提供�
 
 ==JDBC 用于 MyBatis 框架中，不用深入学习，简单了解即可==
 
-## 使用
+## 正确食用本Demo的方法
+
+### 1 - 配置MySQL数据库
+
+- 在`src/main/resources/sql`文件夹中有`exam1.sql`文件，这是所有`table`的备份sql脚本
+- 需要先创建一个数据库，数据库名叫`exam1`
+
+```sql
+CREATE DATABASE exam1;
+```
+
+- 然后对这个数据库运行刚才那个SQL脚本
+
+![IDEA中的使用](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.1q63pcf3656o.png)
+
+- 然后在IDEA右边的数据库模块处就能看见新建的数据库exam1了，此时应该就可以正常跑Demo中的测试类了
+- 可以先运行下测试类`JdbcFirstTest`，看下是否报错，没报错说明数据库已经配置好了
+
+### 2 - 运行测试类
+
+==配置完MySQl数据库之后，就可以根据下面的描述，运行相应的测试类看结果了！！！==
+
+## JDBC使用流程
 
 ### 1 - **导入MySQL驱动包**
 

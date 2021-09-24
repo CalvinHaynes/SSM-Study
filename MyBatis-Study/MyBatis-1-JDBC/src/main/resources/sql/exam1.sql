@@ -16,6 +16,33 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `blog`
+--
+
+DROP TABLE IF EXISTS `blog`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `blog` (
+  `id` int NOT NULL AUTO_INCREMENT COMMENT '博客id',
+  `title` varchar(30) NOT NULL COMMENT '博客标题',
+  `author` varchar(30) NOT NULL COMMENT '博客作者',
+  `create_time` datetime NOT NULL COMMENT '创建时间',
+  `views` int NOT NULL COMMENT '浏览量',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=20210824 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `blog`
+--
+
+LOCK TABLES `blog` WRITE;
+/*!40000 ALTER TABLE `blog` DISABLE KEYS */;
+INSERT INTO `blog` (`id`, `title`, `author`, `create_time`, `views`) VALUES (20210101,'LinuxBasics','Linus Benedict Torvalds','2021-01-01 16:43:21',10000),(20210622,'CBasics','Dennis M.Ritchie','2021-06-22 16:42:41',1900),(20210722,'PythonBascics','Guido van Rossum','2021-07-22 16:41:14',199),(20210822,'JavaBasics','James Gosling','2021-08-22 16:40:18',10),(20210823,'MyBatisBasics','Calvin Haynes','2021-08-23 15:26:03',888888);
+/*!40000 ALTER TABLE `blog` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `customers`
 --
 
@@ -160,6 +187,57 @@ INSERT INTO `products` (`prod_id`, `vend_id`, `prod_name`, `prod_price`, `prod_d
 UNLOCK TABLES;
 
 --
+-- Table structure for table `student`
+--
+
+DROP TABLE IF EXISTS `student`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `student` (
+  `id` int NOT NULL,
+  `name` varchar(30) DEFAULT NULL,
+  `tid` int DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fktid` (`tid`),
+  CONSTRAINT `fktid` FOREIGN KEY (`tid`) REFERENCES `teacher` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `student`
+--
+
+LOCK TABLES `student` WRITE;
+/*!40000 ALTER TABLE `student` DISABLE KEYS */;
+INSERT INTO `student` (`id`, `name`, `tid`) VALUES (1,'小明',1),(2,'小红',1),(3,'小张',1),(4,'小李',1),(5,'小王',1);
+/*!40000 ALTER TABLE `student` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `teacher`
+--
+
+DROP TABLE IF EXISTS `teacher`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `teacher` (
+  `id` int NOT NULL,
+  `name` varchar(30) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `teacher`
+--
+
+LOCK TABLES `teacher` WRITE;
+/*!40000 ALTER TABLE `teacher` DISABLE KEYS */;
+INSERT INTO `teacher` (`id`, `name`) VALUES (1,'大司马');
+/*!40000 ALTER TABLE `teacher` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `users`
 --
 
@@ -167,9 +245,11 @@ DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `users` (
-  `id` int DEFAULT NULL,
+  `id` int NOT NULL,
   `name` varchar(25) DEFAULT NULL,
-  `password` varchar(10) DEFAULT NULL
+  `password` varchar(10) DEFAULT NULL,
+  `last_name` varchar(25) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -179,7 +259,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` (`id`, `name`, `password`) VALUES (1000,'Calvin','412523chx'),(1001,'Jack','123456'),(1002,'Mary','654321');
+INSERT INTO `users` (`id`, `name`, `password`, `last_name`) VALUES (1001,'Jack','123456','London'),(1002,'Mary','654321','Smith'),(1003,'Calvin','987654','Haynes'),(1005,'Luise','5985625','Anna'),(1007,'LiHua','8905467577','Wang');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -221,4 +301,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-08-16 23:15:28
+-- Dump completed on 2021-09-24 21:13:59

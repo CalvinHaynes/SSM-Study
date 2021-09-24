@@ -14,6 +14,15 @@
     <!--            </if>-->
     <!--        </select>-->
 
+    <sql id="if-title-author">
+        <if test="title != null">
+            title = #{title}
+        </if>
+        <if test="author != null">
+            and author = #{author}
+        </if>
+    </sql>
+    
     <select id="queryBlogIf" parameterType="map" resultType="blog">
         select * from blog
         <!--
@@ -21,12 +30,9 @@
             而且，若子句的开头为 “AND” 或 “OR”，where 元素也会将它们去除。
         -->
         <where>
-            <if test="title!=null">
-                and title = #{title}
-            </if>
-            <if test="author!=null">
-                and author = #{author}
-            </if>
+            <!-- 引用 sql 片段，如果refid 指定的不在本文件中，那么需要在前面加上 namespace -->
+            <include refid="if-title-author"/>
+            <!-- 在这里还可以引用其他的 sql 片段 -->
         </where>
     </select>
 
@@ -77,5 +83,6 @@
             </foreach>
         </where>
     </select>
+
 
 </mapper>

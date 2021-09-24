@@ -6,13 +6,16 @@
 <mapper namespace="top.calvinhaynes.mapper.UserMapper">
 
     <!--查询所有User-->
-    <select id="getAllUsers" resultType="user">
-        select * from users
+    <select id="getAllUsers" resultType="top.calvinhaynes.pojo.Users">
+        select *
+        from users
     </select>
 
     <!--通过用户ID查询用户-->
     <select id="selectUserById" resultType="top.calvinhaynes.pojo.Users" parameterType="int">
-        select * from users where id=#{id};
+        select *
+        from users
+        where id = #{id};
     </select>
 
 
