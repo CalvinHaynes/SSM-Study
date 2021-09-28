@@ -1,10 +1,11 @@
 package top.calvinhaynes.pojo;
 
+
 /**
- * @ProjectName: User
- * @Author: CalvinHaynes
- * @Date: 2021/8/17 0:59
- * @Description:与数据库数据相关的实体类
+ * 用户实体类
+ *
+ * @author CalvinHaynes
+ * @date 2021/09/28
  */
 public class Users {
     private int id;

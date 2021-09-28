@@ -12,7 +12,7 @@ SUN 公司为了简化开发人员（对数据库的统一）的操作，提供�
 
 ## 正确食用本Demo的方法
 
-### 1 - 配置MySQL数据库
+### 1 - 配置MySQL数据库（由于整个MyBatis项目操作的都是这个exam1数据库，所以全局有效）
 
 - 在`src/main/resources/sql`文件夹中有`exam1.sql`文件，这是所有`table`的备份sql脚本
 - 需要先创建一个数据库，数据库名叫`exam1`

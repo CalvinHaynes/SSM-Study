@@ -7,12 +7,11 @@ import top.calvinhaynes.utils.MyBatisUtils;
 
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
+
 
 public class Test1 {
     @Test
-    public void selectUserTest(){
+    public void selectUserTest() {
 
         //先利用工具类拿到SqlSession
         SqlSession session = MyBatisUtils.getSession();
@@ -40,11 +39,11 @@ public class Test1 {
         map.put("userId", 1005);
         map.put("userName", "Calvin");
         map.put("userPassword", "888888");
-        map.put("userLastName","Durant");
+        map.put("userLastName", "Durant");
 
         int i = mapper.addUserByMap(map);
 
-        if(i > 0){
+        if (i > 0) {
             System.out.println("利用Map作为参数添加用户成功");
         }
 
@@ -66,7 +65,7 @@ public class Test1 {
     }
 
     @Test
-    public void selectUserLikeTest(){
+    public void selectUserLikeTest() {
         SqlSession session = MyBatisUtils.getSession();
 
         UserMapper mapper = session.getMapper(UserMapper.class);
@@ -85,15 +84,15 @@ public class Test1 {
     }
 
     @Test
-    public void updateUserByNameTest(){
+    public void updateUserByNameTest() {
         SqlSession session = MyBatisUtils.getSession();
 
         UserMapper mapper = session.getMapper(UserMapper.class);
 
-        Users calvin = new Users(1003,"Calvin","987654");
+        Users calvin = new Users(1003, "Calvin", "987654");
         int res = mapper.updateUserByName(calvin);
 
-        if(res > 0){
+        if (res > 0) {
             System.out.println("更改用户" + calvin.getName() + "的信息成功");
         }
 
@@ -103,14 +102,14 @@ public class Test1 {
     }
 
     @Test
-    public void addUserTest(){
+    public void addUserTest() {
         SqlSession session = MyBatisUtils.getSession();
 
         Users liHua = new Users(1004, "LiHua", "5418814");
         UserMapper mapper = session.getMapper(UserMapper.class);
         int res = mapper.addUser(liHua);
 
-        if(res > 0){
+        if (res > 0) {
             System.out.println("添加用户" + liHua + "成功");
         }
 
@@ -125,7 +124,7 @@ public class Test1 {
         UserMapper mapper = session.getMapper(UserMapper.class);
         int i = mapper.deleteUserById(1004);
 
-        if(i > 0){
+        if (i > 0) {
             System.out.println("删除用户成功");
         }
 

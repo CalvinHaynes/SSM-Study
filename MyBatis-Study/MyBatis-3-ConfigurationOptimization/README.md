@@ -138,9 +138,10 @@ url=jdbc:mysql://localhost:3306/exam1?useUnicode=true&characterEncoding=utf8&use
 
 ```xml
 <properties resource="db.properties">
-        <property name="username" value="root"/>
-        <property name="pwd" value="412523chx"/>
-    </properties>
+    <!--设置为自己MySQL的username和password-->
+    <property name="username" value="root"/>
+    <property name="pwd" value="412523chx"/>
+</properties>
 ```
 
 #### 3 - 类型别名（typeAliases）
