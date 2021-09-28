@@ -1,20 +1,24 @@
 package top.calvinhaynes.reflection;
 
+
 /**
- * @ProjectName: Test1
- * @Author: CalvinHaynes
- * @Date: 2021/8/10 0:45
- * @Description:反射获取对象
+ * test1：反射获取对象
+ *
+ * @author CalvinHaynes
+ * @date 2021/09/28
  */
 public class Test1 {
     public static void main(String[] args) throws ClassNotFoundException {
-        //反射获取类的Class对象
-        Class user = Class.forName("top.calvinhaynes.reflection.User");
-        System.out.println(user);   //class top.calvinhaynes.reflection.User
 
-        Class user1 = Class.forName("top.calvinhaynes.reflection.User");
-        Class user2 = Class.forName("top.calvinhaynes.reflection.User");
-        Class user3 = Class.forName("top.calvinhaynes.reflection.User");
+        //反射获取类的Class对象
+        Class<?> user = Class.forName("top.calvinhaynes.reflection.User");
+
+        //class top.calvinhaynes.reflection.User
+        System.out.println(user);
+
+        Class<?> user1 = Class.forName("top.calvinhaynes.reflection.User");
+        Class<?> user2 = Class.forName("top.calvinhaynes.reflection.User");
+        Class<?> user3 = Class.forName("top.calvinhaynes.reflection.User");
 
         //一个类在内存中只有一个Class对象
         //一个类被加载后,类的整个结构都被封装在Class对象中
@@ -26,6 +30,12 @@ public class Test1 {
     }
 }
 
+/**
+ * 用户类
+ *
+ * @author CalvinHaynes
+ * @date 2021/09/28
+ */
 class User {
     private String name;
     private int id;

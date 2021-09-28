@@ -16,8 +16,8 @@
 
     <!--方式二注册bean-->
     <bean id="userMapper2" class="top.calvinhaynes.mapper.UserMapperImpl2">
-<!--        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>-->
-        <property name="sqlSessionTemplate" ref="sqlSessionTemplate"/>
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+        <!--<property name="sqlSessionTemplate" ref="sqlSessionTemplate"/>-->
     </bean>
 
 </beans>

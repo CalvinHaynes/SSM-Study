@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Spring-AOP/Demo_AOP_1_JavaBase_Reflection/Demo_AOP_1_JavaBase_Reflection.iml" filepath="$PROJECT_DIR$/Spring-AOP/Demo_AOP_1_JavaBase_Reflection/Demo_AOP_1_JavaBase_Reflection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-AOP/Demo_AOP_2_Proxy/Demo_AOP_2_Proxy.iml" filepath="$PROJECT_DIR$/Spring-AOP/Demo_AOP_2_Proxy/Demo_AOP_2_Proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-AOP/Demo_AOP_3_Spring_AOP/Demo_AOP_3_Spring_AOP.iml" filepath="$PROJECT_DIR$/Spring-AOP/Demo_AOP_3_Spring_AOP/Demo_AOP_3_Spring_AOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-DI/Demo_DI_1/Demo_DI_1.iml" filepath="$PROJECT_DIR$/Spring-DI/Demo_DI_1/Demo_DI_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-DI/Demo_DI_2_BeanScope/Demo_DI_2_BeanScope.iml" filepath="$PROJECT_DIR$/Spring-DI/Demo_DI_2_BeanScope/Demo_DI_2_BeanScope.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-DI/Demo_DI_3_AutoWired/Demo_DI_3_AutoWired.iml" filepath="$PROJECT_DIR$/Spring-DI/Demo_DI_3_AutoWired/Demo_DI_3_AutoWired.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-DI/Demo_DI_4_Annotation/Demo_DI_4_Annotation.iml" filepath="$PROJECT_DIR$/Spring-DI/Demo_DI_4_Annotation/Demo_DI_4_Annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-DI/Demo_DI_5_JavaConfig/Demo_DI_5_JavaConfig.iml" filepath="$PROJECT_DIR$/Spring-DI/Demo_DI_5_JavaConfig/Demo_DI_5_JavaConfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-IOC/Demo_IOC_1/Demo_IOC_1.iml" filepath="$PROJECT_DIR$/Spring-IOC/Demo_IOC_1/Demo_IOC_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-IOC/Demo_IOC_2/Demo_IOC_2.iml" filepath="$PROJECT_DIR$/Spring-IOC/Demo_IOC_2/Demo_IOC_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-IOC/Demo_IOC_3/Demo_IOC_3.iml" filepath="$PROJECT_DIR$/Spring-IOC/Demo_IOC_3/Demo_IOC_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-IOC/Demo_IOC_4/Demo_IOC_4.iml" filepath="$PROJECT_DIR$/Spring-IOC/Demo_IOC_4/Demo_IOC_4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-IOC/Demo_IOC_5/Demo_IOC_5.iml" filepath="$PROJECT_DIR$/Spring-IOC/Demo_IOC_5/Demo_IOC_5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-IOC/Demo_IOC_6/Demo_IOC_6.iml" filepath="$PROJECT_DIR$/Spring-IOC/Demo_IOC_6/Demo_IOC_6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-IOC/Demo_IOC_7/Demo_IOC_7.iml" filepath="$PROJECT_DIR$/Spring-IOC/Demo_IOC_7/Demo_IOC_7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-AOP/Spring-AOP.iml" filepath="$PROJECT_DIR$/Spring-AOP/Spring-AOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-DI/Spring-DI.iml" filepath="$PROJECT_DIR$/Spring-DI/Spring-DI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-IOC/Spring-IOC.iml" filepath="$PROJECT_DIR$/Spring-IOC/Spring-IOC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-MyBatis/Spring-MyBatis.iml" filepath="$PROJECT_DIR$/Spring-MyBatis/Spring-MyBatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Spring-Study.iml" filepath="$PROJECT_DIR$/.idea/Spring-Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-Transaction/Spring-Transaction.iml" filepath="$PROJECT_DIR$/Spring-Transaction/Spring-Transaction.iml" />
+    </modules>
+  </component>
+</project>

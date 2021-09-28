@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Spring-DI/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-AOP/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-IOC/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-MyBatis/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-Transaction/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

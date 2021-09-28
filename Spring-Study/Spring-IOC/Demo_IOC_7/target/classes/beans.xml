@@ -25,6 +25,9 @@
     <alias name="userService" alias="service"/>
     <alias name="userService" alias="myService"/>
 
-
+    <!--团队合作最后汇总配置文件，集成为一个配置文件的时候 -->
+    <!--可以导入团队得所有的配置文件到一个总的配置文件applicationContext.xml中 -->
+    <!--然后项目主程序只解析这一个总的XML配置文件就行了 -->
+    <import resource="beans.xml"/>
 
 </beans>

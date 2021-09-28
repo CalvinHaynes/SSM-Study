@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Demo_DI_2_BeanScope" />
+        <module name="Demo_IOC_7" />
+        <module name="Demo_DI_1" />
+        <module name="Demo_IOC_6" />
+        <module name="Spring-Transaction" />
+        <module name="Demo_IOC_1" />
+        <module name="Spring-MyBatis" />
+        <module name="Demo_IOC_5" />
+        <module name="Demo_IOC_4" />
+        <module name="Demo_IOC_3" />
+        <module name="Demo_DI_4_Annotation" />
+        <module name="Demo_IOC_2" />
+        <module name="Demo_AOP_2_Proxy" />
+        <module name="Demo_DI_3_AutoWired" />
+        <module name="Demo_AOP_3_Spring_AOP" />
+        <module name="Demo_DI_5_JavaConfig" />
+        <module name="Demo_AOP_1_JavaBase_Reflection" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Demo_AOP_1_JavaBase_Reflection" target="8" />
+      <module name="Demo_AOP_2_Proxy" target="8" />
+      <module name="Demo_AOP_3_Spring_AOP" target="8" />
+      <module name="Demo_DI_1" target="8" />
+      <module name="Demo_DI_2_BeanScope" target="8" />
+      <module name="Demo_DI_3_AutoWired" target="8" />
+      <module name="Demo_DI_4_Annotation" target="8" />
+      <module name="Demo_DI_5_JavaConfig" target="8" />
+      <module name="Demo_IOC_1" target="8" />
+      <module name="Demo_IOC_2" target="8" />
+      <module name="Demo_IOC_3" target="8" />
+      <module name="Demo_IOC_4" target="8" />
+      <module name="Demo_IOC_5" target="8" />
+      <module name="Demo_IOC_6" target="8" />
+      <module name="Demo_IOC_7" target="8" />
+      <module name="Spring-AOP" target="8" />
+      <module name="Spring-DI" target="8" />
+      <module name="Spring-IOC" target="1.7" />
+      <module name="Spring-MyBatis" target="8" />
+      <module name="Spring-Transaction" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
