@@ -1,10 +1,11 @@
 package top.calvinhaynes.reflection;
 
+
 /**
- * @ProjectName: Test5
- * @Author: CalvinHaynes
- * @Date: 2021/8/14 8:33
- * @Description:类初始化发生场景的测试和分析
+ * test5：类初始化发生场景的测试和分析
+ *
+ * @author CalvinHaynes
+ * @date 2021/09/28
  */
 public class Test5 {
 

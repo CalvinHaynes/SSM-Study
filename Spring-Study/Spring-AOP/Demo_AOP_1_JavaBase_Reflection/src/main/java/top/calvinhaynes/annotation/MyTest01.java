@@ -1,10 +1,11 @@
 package top.calvinhaynes.annotation;
 
+
 /**
- * @ProjectName: MyTest01
- * @Author: CalvinHaynes
- * @Date: 2021/8/10 0:15
- * @Description:测试内置注解
+ * 测试内置注解
+ *
+ * @author CalvinHaynes
+ * @date 2021/09/28
  */
 @SuppressWarnings("all")//此类警告全删
 public class MyTest01 {

@@ -1,10 +1,11 @@
 package top.calvinhaynes.reflection;
 
+
 /**
- * @ProjectName: Test6
- * @Author: CalvinHaynes
- * @Date: 2021/8/14 9:05
- * @Description:测试类加载器
+ * test6：测试类加载器
+ *
+ * @author CalvinHaynes
+ * @date 2021/09/28
  */
 public class Test6 {
     public static void main(String[] args) throws ClassNotFoundException {

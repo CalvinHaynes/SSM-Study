@@ -1,38 +1,41 @@
 package top.calvinhaynes.annotation;
 
+import org.junit.jupiter.api.Test;
+
 import java.lang.annotation.*;
 
+
 /**
- * @ProjectName: MyTest02
- * @Author: CalvinHaynes
- * @Date: 2021/8/10 0:15
- * @Description:自定义注解测试
+ * 自定义注解测试
+ *
+ * @author CalvinHaynes
+ * @date 2021/09/28
  */
 @MyAnnotation
 public class MyTest02 {
 
     @MyAnnotation
+    @Test
     public void test(){
 
     }
 
 }
 
-//定义一个注解
-
-//Target 表示注解用在哪些地方
+/**
+ * 我的自定义注解
+ *  - Target 表示注解用在哪些地方
+ *  - Retention 表示我们的注解在什么地方还有效 ---> RUNTIME > CLASS > SOURCES
+ *  - Documented 表示是否将我们的注解生成到Javadoc中
+ *  - Inherited 子类可以继承父类的注解
+ *
+ * @author CalvinHaynes
+ * @date 2021/09/28
+ */
 @Target(value = {ElementType.METHOD, ElementType.TYPE})
-
-//Retention 表示我们的注解在什么地方还有效
-//RUNTIME > CLASS > SOURCES
 @Retention(value = RetentionPolicy.RUNTIME)
-
-//Documented 表示是否将我们的注解生成到Javadoc中
 @Documented
-
-//Inherited 子类可以继承父类的注解
 @Inherited
-
 @interface MyAnnotation{
 
 }

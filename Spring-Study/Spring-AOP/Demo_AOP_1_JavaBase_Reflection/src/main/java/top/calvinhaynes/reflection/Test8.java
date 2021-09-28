@@ -5,11 +5,12 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+
 /**
- * @ProjectName: Test8
- * @Author: CalvinHaynes
- * @Date: 2021/8/14 14:07
- * @Description:动态的创建一个对象，利用反射
+ * test8:动态的创建一个对象，利用反射
+ *
+ * @author CalvinHaynes
+ * @date 2021/09/28
  */
 public class Test8 {
     public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException, NoSuchFieldException {
