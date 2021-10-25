@@ -12,22 +12,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51d167b3-3077-4ee3-b944-e764144f153e" name="Changes" comment="Spring MVC上传">
-      <change afterPath="$PROJECT_DIR$/.idea/fastRequestCollection.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/src/main/resources/rebel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-Study/Spring-AOP/Demo_AOP_1_JavaBase_Reflection/src/main/java/top/calvinhaynes/annotation/MyTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-Study/Spring-AOP/Demo_AOP_1_JavaBase_Reflection/src/main/java/top/calvinhaynes/annotation/MyTest01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-Study/Spring-AOP/Demo_AOP_1_JavaBase_Reflection/src/main/java/top/calvinhaynes/reflection/Test5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-Study/Spring-AOP/Demo_AOP_1_JavaBase_Reflection/src/main/java/top/calvinhaynes/reflection/Test5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-Study/Spring-AOP/Demo_AOP_1_JavaBase_Reflection/src/main/java/top/calvinhaynes/reflection/Test8.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-Study/Spring-AOP/Demo_AOP_1_JavaBase_Reflection/src/main/java/top/calvinhaynes/reflection/Test8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-Study/Spring-AOP/Demo_AOP_1_JavaBase_Reflection/src/main/java/top/calvinhaynes/reflection/Test9.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-Study/Spring-AOP/Demo_AOP_1_JavaBase_Reflection/src/main/java/top/calvinhaynes/reflection/Test9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-Study/Spring-DI/Demo_DI_1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-Study/Spring-DI/Demo_DI_1/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-Study/Spring-DI/Demo_DI_2_BeanScope/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-Study/Spring-DI/Demo_DI_2_BeanScope/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring-Study/Spring-DI/Demo_DI_3_AutoWired/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-Study/Spring-DI/Demo_DI_3_AutoWired/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-HelloServlet/2-HelloServlet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/2-HelloServlet/2-HelloServlet.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7-HelloSpringMVC/7-HelloSpringMVC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/7-HelloSpringMVC/7-HelloSpringMVC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/8-HelloSpringMVC-Annotation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/8-HelloSpringMVC-Annotation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/8-HelloSpringMVC-Annotation.war" beforeDir="false" afterPath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/8-HelloSpringMVC-Annotation.war" afterDir="false" />
-    </list>
+    <list default="true" id="51d167b3-3077-4ee3-b944-e764144f153e" name="Changes" comment="Spring MVC上传" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -420,7 +405,7 @@
       <workItem from="1633680032691" duration="1231000" />
       <workItem from="1634305372200" duration="684000" />
       <workItem from="1634458029555" duration="70000" />
-      <workItem from="1635164464043" duration="120000" />
+      <workItem from="1635164464043" duration="431000" />
     </task>
     <task id="LOCAL-00001" summary="update something">
       <created>1630166935816</created>
@@ -464,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631347966135</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Spring MVC上传">
+      <created>1635164872526</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1635164872526</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
