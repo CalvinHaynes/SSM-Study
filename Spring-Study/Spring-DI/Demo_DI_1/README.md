@@ -162,8 +162,6 @@
     <!--必须有无参构造器和有参构造器 -->
     <bean id="person_c" class="top.calvinhaynes.pojo.Person" p:name="嫂子" p:age="18"/>
 
-
-
 </beans>
-
 ```
+

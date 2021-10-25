@@ -1,6 +1,5 @@
 package top.calvinhaynes.reflection;
 
-import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -43,7 +42,8 @@ public class Test8 {
         //禁用访问安全检查：name属性是private的
         //同时禁用访问安全检查还会提高反射效率，下一个测试例子中详解
         name.setAccessible(true);
-        name.set(user4, "Jack London"); //设置属性的值
+        //设置属性的值
+        name.set(user4, "Jack London");
         System.out.println("通过反射操作属性:" + user4.getName());
 
 

@@ -3,11 +3,12 @@ package top.calvinhaynes.reflection;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+
 /**
- * @ProjectName: Test9
- * @Author: CalvinHaynes
- * @Date: 2021/8/14 14:57
- * @Description:禁用安全监测提高反射效率的测试
+ * test9：禁用安全监测提高反射效率的测试
+ *
+ * @author CalvinHaynes
+ * @date 2021/09/29
  */
 public class Test9 {
 

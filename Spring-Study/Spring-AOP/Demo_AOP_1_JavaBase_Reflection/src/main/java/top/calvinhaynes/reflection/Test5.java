@@ -16,25 +16,25 @@ public class Test5 {
     public static void main(String[] args) throws ClassNotFoundException {
         //类的主动引用测试（一定出现类的初始化）
         //1.new 一个类的对象
-//        Son son = new Son();
+        //Son son = new Son();
 
         //2.使用反射调用
-//        Class sonClass = Class.forName("top.calvinhaynes.reflection.Son");
+        //Class sonClass = Class.forName("top.calvinhaynes.reflection.Son");
 
         //3.调用类的静态成员(除了final常量)和静态方法
-//        System.out.println(Son.id);
-//        Son.show();
+        //System.out.println(Son.id);
+        //Son.show();
 
 
         //类的被动引用(不会发生类的初始化)
         //1.通过子类引用父类的静态变量
-//        System.out.println(Son.age);
+        //System.out.println(Son.age);
 
         //2.通过数组定义类引用
-//        Son[] sons = new Son[10];
+        //Son[] sons = new Son[10];
 
         //3.引用常量 final(常量在链接阶段就已经存入调用类的常量池中了)
-//        System.out.println(Son.ID);
+        //System.out.println(Son.ID);
 
     }
 

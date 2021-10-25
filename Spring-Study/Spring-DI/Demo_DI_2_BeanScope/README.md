@@ -6,7 +6,7 @@
 
 - 按照官网的解释：bean就像是写好的 recipe 菜单一样，通过设置Bean的作用域，可以控制Bean创建对象的范围
 - Spring Framework 支持六个 BeanScope
-  ![BeanScope](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.tvmxb96a8ow.png)
+  ![BeanScope](https://raw.githubusercontent.com/CalvinHaynes/ImageHub/main/BlogImage/image.tvmxb96a8ow.png)
 
 ## 本Demo中只体现了前两个Scope
 
@@ -36,3 +36,4 @@
         <property name="age" value="18"/>
     </bean>
 ```
+

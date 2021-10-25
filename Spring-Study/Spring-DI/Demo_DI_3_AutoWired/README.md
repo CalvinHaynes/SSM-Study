@@ -19,7 +19,6 @@ Spring自动装配主要从两个角度来实现，或者说是两个操作
 ## 本Demo中的自动装配实现
 ### 1 - 方式1 - XML配置文件实现
 ```xml
-
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

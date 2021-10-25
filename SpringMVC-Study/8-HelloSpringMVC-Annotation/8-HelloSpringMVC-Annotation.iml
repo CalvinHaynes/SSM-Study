@@ -9,13 +9,22 @@
         <webroots>
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
+        <sourceRoots />
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">
+      <configuration />
+    </facet>
+    <facet type="JRebel" name="JRebel">
       <configuration>
-        <fileset id="fileset" name="Springmvc Servlet" removed="false">
-          <file>file://$MODULE_DIR$/src/main/resources/springmvc-servlet.xml</file>
-        </fileset>
+        <option name="ideModuleStorage">
+          <map>
+            <entry key="com.zeroturnaround.jrebel.FormatVersion" value="7.0.0" />
+            <entry key="jrebelEnabled" value="true" />
+            <entry key="lastExternalPluginCheckTime" value="1634305381749" />
+          </map>
+        </option>
+        <option name="version" value="5" />
       </configuration>
     </facet>
   </component>

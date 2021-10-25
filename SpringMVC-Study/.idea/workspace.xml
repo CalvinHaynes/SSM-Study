@@ -13,12 +13,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51d167b3-3077-4ee3-b944-e764144f153e" name="Changes" comment="Spring MVC上传">
+      <change afterPath="$PROJECT_DIR$/.idea/fastRequestCollection.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/src/main/resources/rebel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-Study/Spring-AOP/Demo_AOP_1_JavaBase_Reflection/src/main/java/top/calvinhaynes/annotation/MyTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-Study/Spring-AOP/Demo_AOP_1_JavaBase_Reflection/src/main/java/top/calvinhaynes/annotation/MyTest01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-Study/Spring-AOP/Demo_AOP_1_JavaBase_Reflection/src/main/java/top/calvinhaynes/reflection/Test5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-Study/Spring-AOP/Demo_AOP_1_JavaBase_Reflection/src/main/java/top/calvinhaynes/reflection/Test5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-Study/Spring-AOP/Demo_AOP_1_JavaBase_Reflection/src/main/java/top/calvinhaynes/reflection/Test8.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-Study/Spring-AOP/Demo_AOP_1_JavaBase_Reflection/src/main/java/top/calvinhaynes/reflection/Test8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-Study/Spring-AOP/Demo_AOP_1_JavaBase_Reflection/src/main/java/top/calvinhaynes/reflection/Test9.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-Study/Spring-AOP/Demo_AOP_1_JavaBase_Reflection/src/main/java/top/calvinhaynes/reflection/Test9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-Study/Spring-DI/Demo_DI_1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-Study/Spring-DI/Demo_DI_1/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-Study/Spring-DI/Demo_DI_2_BeanScope/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-Study/Spring-DI/Demo_DI_2_BeanScope/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-Study/Spring-DI/Demo_DI_3_AutoWired/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-Study/Spring-DI/Demo_DI_3_AutoWired/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-HelloServlet/2-HelloServlet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/2-HelloServlet/2-HelloServlet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7-HelloSpringMVC/7-HelloSpringMVC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/7-HelloSpringMVC/7-HelloSpringMVC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/8-HelloSpringMVC-Annotation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/8-HelloSpringMVC-Annotation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/8-HelloSpringMVC-Annotation.war" beforeDir="false" afterPath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/8-HelloSpringMVC-Annotation.war" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -45,6 +61,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$PROJECT_DIR$/../../../../../Software/apache-tomcat-10.0.10-windows-x64/apache-tomcat-10.0.10/lib/servlet-api.jar!/jakarta/servlet/http/HttpServlet.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../../../Software/apache-tomcat-10.0.10-windows-x64/apache-tomcat-10.0.10/lib/servlet-api.jar!/jakarta/servlet/http/HttpServletRequest.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -82,10 +101,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Spring-Study" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.22453703" />
     <property name="project.structure.side.proportion" value="0.26504853" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -247,6 +267,9 @@
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="56536" />
       </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="61180" />
+      </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -263,6 +286,36 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
           <option name="USE_DEFAULT" value="true" />
@@ -363,6 +416,11 @@
       <workItem from="1631347844987" duration="138000" />
       <workItem from="1632396921691" duration="1375000" />
       <workItem from="1632750828116" duration="312000" />
+      <workItem from="1633415761614" duration="87000" />
+      <workItem from="1633680032691" duration="1231000" />
+      <workItem from="1634305372200" duration="684000" />
+      <workItem from="1634458029555" duration="70000" />
+      <workItem from="1635164464043" duration="120000" />
     </task>
     <task id="LOCAL-00001" summary="update something">
       <created>1630166935816</created>
