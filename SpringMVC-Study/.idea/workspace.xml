@@ -12,7 +12,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51d167b3-3077-4ee3-b944-e764144f153e" name="Changes" comment="Spring MVC上传" />
+    <list default="true" id="51d167b3-3077-4ee3-b944-e764144f153e" name="Changes" comment="Spring MVC上传">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/8-HelloSpringMVC-Annotation.war" beforeDir="false" afterPath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/8-HelloSpringMVC-Annotation.war" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +93,7 @@
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.22453703" />
     <property name="project.structure.side.proportion" value="0.26504853" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -406,6 +409,10 @@
       <workItem from="1634305372200" duration="684000" />
       <workItem from="1634458029555" duration="70000" />
       <workItem from="1635164464043" duration="431000" />
+      <workItem from="1635324541059" duration="141000" />
+      <workItem from="1635324705127" duration="120000" />
+      <workItem from="1635343461638" duration="423000" />
+      <workItem from="1635394742475" duration="39000" />
     </task>
     <task id="LOCAL-00001" summary="update something">
       <created>1630166935816</created>
