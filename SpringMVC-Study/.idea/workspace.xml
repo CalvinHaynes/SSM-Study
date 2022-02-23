@@ -12,41 +12,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51d167b3-3077-4ee3-b944-e764144f153e" name="Changes" comment="解决一些安全问题">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-HelloServlet/target/classes/top/calvinhaynes/servlet/ErrorServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-HelloServlet/target/classes/top/calvinhaynes/servlet/HelloServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-ServletContext/target/classes/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-ServletContext/target/classes/top/calvinhaynes/servlet/ForwordRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-ServletContext/target/classes/top/calvinhaynes/servlet/GetServletContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-ServletContext/target/classes/top/calvinhaynes/servlet/GetWebInitParam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-ServletContext/target/classes/top/calvinhaynes/servlet/HelloServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-ServletContext/target/classes/top/calvinhaynes/servlet/ObtainResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4-ServletResponse/target/classes/top/calvinhaynes/servlet/DownloadFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4-ServletResponse/target/classes/top/calvinhaynes/servlet/Redirect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4-ServletResponse/target/classes/top/calvinhaynes/servlet/VerificationCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-ServletRequest/target/classes/top/calvinhaynes/servlet/GetParamAndRequestForwarding.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6-Servlet-Cookie-Session/target/classes/top/calivnhaynes/servlet/CookieDemo01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6-Servlet-Cookie-Session/target/classes/top/calivnhaynes/servlet/CookieDemo02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6-Servlet-Cookie-Session/target/classes/top/calivnhaynes/servlet/SessionDemo01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6-Servlet-Cookie-Session/target/classes/top/calivnhaynes/servlet/SessionDemo02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6-Servlet-Cookie-Session/target/classes/top/calivnhaynes/servlet/SessionDemo03.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/7-HelloSpringMVC/target/classes/springmvc-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/7-HelloSpringMVC/target/classes/top/calvinhaynes/controller/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/rebel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/springmvc-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/top/calvinhaynes/controller/DataPrinting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/top/calvinhaynes/controller/DataProcessing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/top/calvinhaynes/controller/EncodingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/top/calvinhaynes/controller/ForwardAndRedirect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/top/calvinhaynes/controller/ForwardAndRedirect2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/top/calvinhaynes/controller/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/top/calvinhaynes/controller/RestfulController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/top/calvinhaynes/filter/GenericEncodingFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/top/calvinhaynes/filter/MyRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/top/calvinhaynes/pojo/User.class" beforeDir="false" />
-    </list>
+    <list default="true" id="51d167b3-3077-4ee3-b944-e764144f153e" name="Changes" comment="解决一些bug" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +33,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Calvin Haynes &lt;chx1006488386@163.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -91,6 +62,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -100,7 +74,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="1xAERVE55hGbsqnNuFw946Nzfow" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -445,6 +419,7 @@
       <workItem from="1635324705127" duration="120000" />
       <workItem from="1635343461638" duration="423000" />
       <workItem from="1635394742475" duration="39000" />
+      <workItem from="1645582602606" duration="335000" />
     </task>
     <task id="LOCAL-00001" summary="update something">
       <created>1630166935816</created>
@@ -495,7 +470,28 @@
       <option name="project" value="LOCAL" />
       <updated>1635164872526</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="解决一些安全问题">
+      <created>1645582781913</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1645582781913</updated>
+    </task>
+    <task id="LOCAL-00009" summary="解决一些bug">
+      <created>1645582911261</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1645582911261</updated>
+    </task>
+    <task id="LOCAL-00010" summary="解决一些bug">
+      <created>1645582917844</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1645582917844</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,12 +537,13 @@
         <entry key="9e39e566-4f7c-40ec-9362-852bf5f9c5d4" value="TOOL_WINDOW" />
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="update something" />
     <MESSAGE value="Spring MVC上传" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring MVC上传" />
+    <MESSAGE value="解决一些安全问题" />
+    <MESSAGE value="解决一些bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="解决一些bug" />
   </component>
 </project>
