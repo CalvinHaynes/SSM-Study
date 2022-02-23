@@ -140,7 +140,7 @@ url=jdbc:mysql://localhost:3306/exam1?useUnicode=true&characterEncoding=utf8&use
 <properties resource="db.properties">
     <!--设置为自己MySQL的username和password-->
     <property name="username" value="root"/>
-    <property name="pwd" value="412523chx"/>
+    <property name="pwd" value="123456"/>
 </properties>
 ```
 

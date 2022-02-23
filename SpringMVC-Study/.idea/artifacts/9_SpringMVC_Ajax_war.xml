@@ -3,10 +3,8 @@
     <output-path>$PROJECT_DIR$/9-SpringMVC-Ajax/target</output-path>
     <properties id="maven-jee-properties">
       <options>
-        <exploded>false</exploded>
         <module>9-SpringMVC-Ajax</module>
         <packaging>war</packaging>
-        <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
     <root id="archive" name="9-SpringMVC-Ajax.war">

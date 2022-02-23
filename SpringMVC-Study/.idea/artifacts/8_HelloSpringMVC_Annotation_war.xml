@@ -3,10 +3,8 @@
     <output-path>$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target</output-path>
     <properties id="maven-jee-properties">
       <options>
-        <exploded>false</exploded>
         <module>8-HelloSpringMVC-Annotation</module>
         <packaging>war</packaging>
-        <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
     <root id="archive" name="8-HelloSpringMVC-Annotation.war">

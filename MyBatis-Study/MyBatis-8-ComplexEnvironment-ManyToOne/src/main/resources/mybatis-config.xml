@@ -5,7 +5,7 @@
 <configuration>
     <properties resource="db.properties">
         <property name="username" value="root"/>
-        <property name="pwd" value="412523chx"/>
+        <property name="pwd" value="123456"/>
     </properties>
 
     <typeAliases>

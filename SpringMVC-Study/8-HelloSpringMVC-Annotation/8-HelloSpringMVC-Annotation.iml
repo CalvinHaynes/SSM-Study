@@ -9,7 +9,6 @@
         <webroots>
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
-        <sourceRoots />
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">
@@ -21,10 +20,10 @@
           <map>
             <entry key="com.zeroturnaround.jrebel.FormatVersion" value="7.0.0" />
             <entry key="jrebelEnabled" value="true" />
-            <entry key="lastExternalPluginCheckTime" value="1634305381749" />
+            <entry key="lastExternalPluginCheckTime" value="1645582609817" />
           </map>
         </option>
-        <option name="version" value="5" />
+        <option name="version" value="7" />
       </configuration>
     </facet>
   </component>

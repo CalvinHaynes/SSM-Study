@@ -63,7 +63,7 @@ public class JdbcFirstTest {
         //URL = "协议：//主机地址：端口号/数据库名?参数1&参数2&参数3"
         String url = "jdbc:mysql://localhost:3306/exam1?useUnicode=true&characterEncoding=utf8&useSSL=true";
         String userName = "root";
-        String password = "412523chx";
+        String password = "123456";
 
         //3.连接成功,返回数据库对象 connection
         Connection connection = DriverManager.getConnection(url, userName, password);
@@ -137,7 +137,7 @@ Diver 类中就是一个静态的代码块，直接`Class.forName`一下就可�
 //URL = "协议：//主机地址：端口号/数据库名?参数1&参数2&参数3"
 String url="jdbc:mysql://localhost:3306/exam1useUnicode=true&characterEncoding=utf8&useSSL=true";
 String userName = "root";
-String password = "412523chx";
+String password = "123456";
 ```
 
 #### 3 - 获取数据库对象 connection

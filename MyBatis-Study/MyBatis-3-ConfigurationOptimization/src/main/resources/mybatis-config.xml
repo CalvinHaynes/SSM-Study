@@ -6,7 +6,7 @@
     <properties resource="db.properties">
         <!--设置为自己MySQL的username和password-->
         <property name="username" value="root"/>
-        <property name="pwd" value="412523chx"/>
+        <property name="pwd" value="123456"/>
     </properties>
 
     <settings>

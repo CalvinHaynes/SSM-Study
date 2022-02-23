@@ -42,7 +42,7 @@ MyBatis-Spring 会帮助你将 MyBatis 代码无缝地整合到 Spring 中。
      <property name="url"
                value="jdbc:mysql://localhost:3306/exam1?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
      <property name="username" value="root"/>
-     <property name="password" value="412523chx"/>
+     <property name="password" value="123456"/>
  </bean>
 ```
 

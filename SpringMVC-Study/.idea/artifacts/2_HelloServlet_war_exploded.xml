@@ -6,7 +6,6 @@
         <exploded>true</exploded>
         <module>2-HelloServlet</module>
         <packaging>war</packaging>
-        <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
     <root id="root">
