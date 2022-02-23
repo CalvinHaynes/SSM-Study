@@ -12,9 +12,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51d167b3-3077-4ee3-b944-e764144f153e" name="Changes" comment="Spring MVC上传">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/8-HelloSpringMVC-Annotation.war" beforeDir="false" afterPath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/8-HelloSpringMVC-Annotation.war" afterDir="false" />
+    <list default="true" id="51d167b3-3077-4ee3-b944-e764144f153e" name="Changes" comment="解决一些安全问题">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-HelloServlet/target/classes/top/calvinhaynes/servlet/ErrorServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-HelloServlet/target/classes/top/calvinhaynes/servlet/HelloServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-ServletContext/target/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-ServletContext/target/classes/top/calvinhaynes/servlet/ForwordRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-ServletContext/target/classes/top/calvinhaynes/servlet/GetServletContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-ServletContext/target/classes/top/calvinhaynes/servlet/GetWebInitParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-ServletContext/target/classes/top/calvinhaynes/servlet/HelloServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-ServletContext/target/classes/top/calvinhaynes/servlet/ObtainResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4-ServletResponse/target/classes/top/calvinhaynes/servlet/DownloadFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4-ServletResponse/target/classes/top/calvinhaynes/servlet/Redirect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4-ServletResponse/target/classes/top/calvinhaynes/servlet/VerificationCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5-ServletRequest/target/classes/top/calvinhaynes/servlet/GetParamAndRequestForwarding.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6-Servlet-Cookie-Session/target/classes/top/calivnhaynes/servlet/CookieDemo01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6-Servlet-Cookie-Session/target/classes/top/calivnhaynes/servlet/CookieDemo02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6-Servlet-Cookie-Session/target/classes/top/calivnhaynes/servlet/SessionDemo01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6-Servlet-Cookie-Session/target/classes/top/calivnhaynes/servlet/SessionDemo02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6-Servlet-Cookie-Session/target/classes/top/calivnhaynes/servlet/SessionDemo03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7-HelloSpringMVC/target/classes/springmvc-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7-HelloSpringMVC/target/classes/top/calvinhaynes/controller/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/rebel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/springmvc-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/top/calvinhaynes/controller/DataPrinting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/top/calvinhaynes/controller/DataProcessing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/top/calvinhaynes/controller/EncodingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/top/calvinhaynes/controller/ForwardAndRedirect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/top/calvinhaynes/controller/ForwardAndRedirect2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/top/calvinhaynes/controller/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/top/calvinhaynes/controller/RestfulController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/top/calvinhaynes/filter/GenericEncodingFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/top/calvinhaynes/filter/MyRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-HelloSpringMVC-Annotation/target/classes/top/calvinhaynes/pojo/User.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,12 +119,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Spring-Study" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.22453703" />
     <property name="project.structure.side.proportion" value="0.26504853" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
