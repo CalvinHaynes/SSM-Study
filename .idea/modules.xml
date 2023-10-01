@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC-Study/8-HelloSpringMVC-Annotation/8-HelloSpringMVC-Annotation.iml" filepath="$PROJECT_DIR$/SpringMVC-Study/8-HelloSpringMVC-Annotation/8-HelloSpringMVC-Annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SSM-Study.iml" filepath="$PROJECT_DIR$/.idea/SSM-Study.iml" />
+    </modules>
+  </component>
+</project>

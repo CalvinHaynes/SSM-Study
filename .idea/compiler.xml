@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Demo_DI_2_BeanScope" />
+        <module name="Spring-Transaction" />
+        <module name="6-Servlet-Cookie-Session" />
+        <module name="MyBatis-7-AnnotationDevelopment" />
+        <module name="3-ServletContext" />
+        <module name="MyBatis-10-DynamicSQL" />
+        <module name="Demo_AOP_3_Spring_AOP" />
+        <module name="MyBatis-4-ResultMap" />
+        <module name="MyBatis-6-PageBreak" />
+        <module name="Demo_DI_5_JavaConfig" />
+        <module name="MyBatis-2-FirstDemo" />
+        <module name="MyBatis-1-JDBC" />
+        <module name="MyBatis-9-ComplexEnvironment-OneToMany" />
+        <module name="4-ServletResponse" />
+        <module name="Demo_IOC_7" />
+        <module name="MyBatis-3-ConfigurationOptimization" />
+        <module name="Demo_DI_1" />
+        <module name="Demo_IOC_6" />
+        <module name="MyBatis-11-Cache" />
+        <module name="SimpleDemo" />
+        <module name="Demo_IOC_1" />
+        <module name="Spring-MyBatis" />
+        <module name="Demo_IOC_5" />
+        <module name="Demo_IOC_4" />
+        <module name="2-HelloServlet" />
+        <module name="5-ServletRequest" />
+        <module name="Demo_IOC_3" />
+        <module name="Demo_DI_4_Annotation" />
+        <module name="Demo_IOC_2" />
+        <module name="Demo_AOP_2_Proxy" />
+        <module name="Demo_DI_3_AutoWired" />
+        <module name="MyBatis-8-ComplexEnvironment-ManyToOne" />
+        <module name="9-SpringMVC-Ajax" />
+        <module name="7-HelloSpringMVC" />
+        <module name="Demo_AOP_1_JavaBase_Reflection" />
+        <module name="8-HelloSpringMVC-Annotation" />
+        <module name="MyBatis-5-LogFactory" />
+        <module name="1-JavaWeb" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
