@@ -14,7 +14,7 @@
 
 ### SpringMVC真实类过程原理图
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.2cebiia837pc.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.2cebiia837pc.png)
 
 ### 结合Demo分析执行流程
 
@@ -162,7 +162,7 @@ public class HelloController implements Controller {
 
 ### 一直报404错误：
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.d2a32b2rh2g.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.d2a32b2rh2g.png)
 
 **查询之后发现是Tomcat10版本不兼容的问题，降Tomcat版本到Tomcat9.0.52，成功运行**
 
@@ -175,7 +175,7 @@ public class HelloController implements Controller {
 配置springmvc时，报错，实际mapping已经写了。
 工程的web.xml位置配置错误
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.3yz7zjx2b7q0.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.3yz7zjx2b7q0.png)
 
 ### 项目依赖问题
 

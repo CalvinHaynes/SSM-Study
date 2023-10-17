@@ -54,7 +54,7 @@ public class Test9 {
         Class userClass = user2.getClass();
 
         Method getName = userClass.getDeclaredMethod("getName", null);
-        getName.setAccessible(true);
+        getName.setAccessible(true);    //禁用安全检查
 
         long startTime = System.currentTimeMillis();
 
@@ -73,10 +73,6 @@ public class Test9 {
         test2();
         test3();
     }
-
-//    普通方式调用方法执行10亿次用时：6ms
-//    反射方式调用方法执行10亿次用时：3210ms
-//    反射方式调用方法执行10亿次用时：1666ms
 }
 
 

@@ -32,7 +32,7 @@
 
 ### 2 - 添加必要的Java源代码目录和resources资源目录
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.4nxwi2otcps0.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.4nxwi2otcps0.png)
 
 ### 3 - 修改Web.XML配置文件与Tomcat中的版本一致
 
@@ -75,11 +75,11 @@ web.xml文件是Java web项目中的一个配置文件，主要用于配置欢�
 
 #### 导入项目依赖的Jar包
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.1p4hmjhtpyhs.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.1p4hmjhtpyhs.png)
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.6a5t2oqbgwc0.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.6a5t2oqbgwc0.png)
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.2kp5ovdhdhe0.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.2kp5ovdhdhe0.png)
 
 #### 编写HelloServlet类
 
@@ -142,7 +142,7 @@ public class HelloServlet extends HttpServlet {
 
 #### 1.增加配置
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.73md2zl1iug0.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.73md2zl1iug0.png)
 
 #### 2.填写Tomcat配置
 
@@ -152,7 +152,7 @@ public class HelloServlet extends HttpServlet {
 
 将Tomcat环境部署到我们想要使用Tomcat的JavaWeb项目中，可以通过下面的Application Context配置访问项目的URL地址
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.10eyrofk3bcw.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.10eyrofk3bcw.png)
 
 ### 7 - 测试
 

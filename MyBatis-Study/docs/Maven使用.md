@@ -11,7 +11,7 @@ Maven 的核心思想：**约定大于配置**
 
 ### 1 - IDEA 项目创建成功后，看一眼 Maven 的配置，如果用的是IDEA绑定的Maven的话修改为自己的
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.3kxbapbq3nm0.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.3kxbapbq3nm0.png)
 
 - 设置自动导入源码或文档（文档较大，一般不导入）
 
@@ -23,7 +23,7 @@ Maven 的核心思想：**约定大于配置**
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20201030200931259.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.2st3qla7tv20.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.2st3qla7tv20.png)
 
 ### 3 - 关于Maven创建新项目虽然指定了父项目，但是却没继承父项目依赖（生成的pom.xml文件中没有parent标签）
 

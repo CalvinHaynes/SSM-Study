@@ -1,5 +1,6 @@
 package top.calvinhaynes.reflection;
 
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -17,13 +18,13 @@ public class Test8 {
         Class userClass = Class.forName("top.calvinhaynes.reflection.User");
 
         //构造一个对象
-//        User user = (User) userClass.newInstance(); //本质上是调用了类的无参构造器
-//        System.out.println(user);
+        User user = (User) userClass.newInstance(); //本质上是调用了类的无参构造器
+        System.out.println(user);
 
         //通过构造器创建对象
-//        Constructor constructor = userClass.getDeclaredConstructor(String.class, int.class, int.class);
-//        User user2 = (User) constructor.newInstance("Calvin Haynes", 20020412, 19);
-//        System.out.println(user2);
+        Constructor constructor = userClass.getDeclaredConstructor(String.class, int.class, int.class);
+        User user2 = (User) constructor.newInstance("Calvin Haynes", 20020412, 19);
+        System.out.println(user2);
 
         //通过反射调用普通方法
         User user3 = (User) userClass.newInstance();

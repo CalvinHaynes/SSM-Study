@@ -125,5 +125,5 @@ public void selectUserByRowBoundsTest(){
 
 ## MyBatis 分页插件 PageHelper
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.6an4xxb6dzk0.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.6an4xxb6dzk0.png)
 

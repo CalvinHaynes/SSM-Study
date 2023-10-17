@@ -22,7 +22,7 @@
 - 切入点（PointCut）：切面通知执行的“地点”的定义。
 - 连接点（JointPoint）：与切入点匹配的执行点。
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.3v52rm1otlo0.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.3v52rm1otlo0.png)
 
 ## Spring 实现AOP的方式（结合项目查看）
 

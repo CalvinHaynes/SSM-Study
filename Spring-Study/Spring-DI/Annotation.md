@@ -146,7 +146,7 @@ public class MovieRecommender {
 }
 
 ```
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.2me3v1e5l920.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.2me3v1e5l920.png)
 
 #### 2 - @Component 衍生的三个注解
 - @Controller：web层

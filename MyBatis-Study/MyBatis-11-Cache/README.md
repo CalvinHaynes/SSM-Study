@@ -38,14 +38,14 @@ Mybatis包含一个非常强大的查询缓存特性，它可以非常方便地�
   2. 测试在一个sqlSession中查询两次相同记录
   3. 查看输出
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.irvfdcx78ig.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.irvfdcx78ig.png)
 
 - **缓存失效的情况**：
 
   1. 查询不同东西
   2. 增删改操作，由于有可能会操作原本的数据，所以必定会刷新缓存
 
-  ![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.3e16n529qwu0.png)
+  ![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.3e16n529qwu0.png)
 
   3. 查询不同的Mapper.xml
   4. 手动清理缓存

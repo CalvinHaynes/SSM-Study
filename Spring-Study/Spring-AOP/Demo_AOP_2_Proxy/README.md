@@ -15,7 +15,7 @@
 - 代理（Proxy）类：提供了与真实主题相同的接口，其内部含有对真实主题的引用，它可以访问、控制或扩展真实主题的功能。
 - 客户（ProxyTest）：中介帮助客户执行中介业务
   代理模式的结构图：
-  ![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.34ncrg3qzie0.png)
+  ![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.34ncrg3qzie0.png)
 
 ### 2 - 静态代理的优缺点
 代理模式的主要优点有：

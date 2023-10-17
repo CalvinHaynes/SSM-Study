@@ -34,14 +34,16 @@ public class Test4 {
  */
 class Cat{
 
-    public int id = 10;
+    public int id = 20191716;
+
+
     //静态代码块：随着类的加载而执行，而且只执行一次
     static {
         System.out.println("Cat类的静态代码块初始化");
-        age = 10;
+        age = 20;
     }
 
-    static int age = 20;
+    static int age = 30;
 
     public Cat() {
         System.out.println("Cat类的无参构造器初始化");

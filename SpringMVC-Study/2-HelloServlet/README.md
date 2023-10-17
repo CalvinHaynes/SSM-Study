@@ -28,11 +28,11 @@
 
 ### 1 - 创建Maven 基于 webapp模板的项目
 
-![img](https://img-blog.csdnimg.cn/20201030195424154.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage20231017094039.png)
 
 ### 2 - 添加必要的Java源代码目录和resources资源目录
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.4nxwi2otcps0.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.4nxwi2otcps0.png)
 
 ### 3 - 修改Web.XML配置文件与Tomcat中的版本一致
 
@@ -80,7 +80,7 @@ web.xml文件是Java web项目中的一个配置文件，主要用于配置欢�
 
 所以此项目我们导入jakarta.servlet包中的ServletAPI，Maven仓库搜索servlet-api，其中第四个就是
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.vcevye8ksow.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.vcevye8ksow.png)
 
 ==导入tomcat-servlet-api依赖（选择自己Tomcat版本的，比如我的就是Tomcat10.0.10）：==
 
@@ -95,7 +95,7 @@ web.xml文件是Java web项目中的一个配置文件，主要用于配置欢�
 
 **同理，Jsp-api也导入Tomcat内置的**：
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.4p4jcxm16w80.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.4p4jcxm16w80.png)
 
 ==导入tomcat-jsp-api依赖（选择自己Tomcat版本的，比如我的就是Tomcat10.0.10）：==
 
@@ -169,7 +169,7 @@ public class HelloServlet extends HttpServlet {
 
 #### 1.增加配置
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.73md2zl1iug0.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.73md2zl1iug0.png)
 
 #### 2.填写Tomcat配置
 
@@ -181,7 +181,7 @@ public class HelloServlet extends HttpServlet {
 
 - 可以通过下面的Application Context自定义配置访问项目的URL地址
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.10eyrofk3bcw.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.10eyrofk3bcw.png)
 
 ### 7 - 测试
 

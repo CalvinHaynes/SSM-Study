@@ -57,7 +57,7 @@ DAO层，Service层，Controller层
 
 ### 流程图：
 
-![MyBatis第一个Demo思路](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/MyBatis第一个Demo思路.5jtp490xpsk0.png)
+![MyBatis第一个Demo思路](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/MyBatis第一个Demo思路.5jtp490xpsk0.png)
 
 ### 1 - 搭建环境
 
@@ -106,7 +106,7 @@ DAO层，Service层，Controller层
 
 Templates中的内容在下面，复制粘贴即可
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.74xx6amhjic0.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.74xx6amhjic0.png)
 
 **mybatis-config.xml**：
 
@@ -149,7 +149,7 @@ Templates中的内容在下面，复制粘贴即可
 
 本项目的位置就是：
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.2c2ss6wakzms.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.2c2ss6wakzms.png)
 
 #### 写核心配置文件的注意点
 
@@ -375,7 +375,7 @@ public class Test1 {
 
 #### **添加一个方法的流程：**
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.776ntynyruo0.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.776ntynyruo0.png)
 
 #### 1 - 接口中添加抽象方法
 
@@ -711,7 +711,7 @@ List<Users> selectUserLike(String value);
 
 ### 流程分析：
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.7ho2olkwl8w0.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.7ho2olkwl8w0.png)
 
 ### SqlSessionFactoryBuilder
 
@@ -753,7 +753,7 @@ try (SqlSession session = sqlSessionFactory.openSession()) {
 
 在所有代码中都遵循这种使用模式，可以保证所有数据库资源都能被正确地关闭。
 
-![引用自狂神说公众号](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.2hj4x8hixa00.png)
+![引用自狂神说公众号](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.2hj4x8hixa00.png)
 
 ### 映射器实例
 

@@ -6,7 +6,7 @@ SUN 公司为了简化开发人员（对数据库的统一）的操作，提供�
 
 这些规范的实现由具体的厂商去做
 
-![image](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.4vjtv9uhj7u0.png)
+![image](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.4vjtv9uhj7u0.png)
 
 ==JDBC 用于 MyBatis 框架中，不用深入学习，简单了解即可==
 
@@ -23,7 +23,7 @@ CREATE DATABASE exam1;
 
 - 然后对这个数据库运行刚才那个SQL脚本
 
-![IDEA中的使用](https://cdn.jsdelivr.net/gh/CalvinHaynes/ImageHub@main/BlogImage/image.1q63pcf3656o.png)
+![IDEA中的使用](https://xf233.oss-cn-hangzhou.aliyuncs.com/CalvinHaynesBlogImage/image.1q63pcf3656o.png)
 
 - 然后在IDEA右边的数据库模块处就能看见新建的数据库exam1了，此时应该就可以正常跑Demo中的测试类了
 - 可以先运行下测试类`JdbcFirstTest`，看下是否报错，没报错说明数据库已经配置好了
